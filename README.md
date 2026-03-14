@@ -1,3 +1,5 @@
+**[English](README_EN.md)** | **繁體中文**
+
 # Aletheia — AION2 DPS Meter
 
 非侵入式的 AION2（永恆紀元2，台版）即時 DPS 計量器。
