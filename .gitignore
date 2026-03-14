@@ -1,0 +1,21 @@
+# Python
+*.py
+*.pyc
+__pycache__/
+venv/
+
+# Development
+*.log
+*.json
+*.pcap
+tools/
+docs/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini
