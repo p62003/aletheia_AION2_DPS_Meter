@@ -63,10 +63,10 @@ Calculates combat data in real time via passive network packet sniffing — **no
 ### Global Hotkeys
 | Hotkey | Function |
 |--------|----------|
-| `Ctrl+Q` | Start / Stop monitoring |
-| `Ctrl+W` | Show / Hide overlay |
-| `Ctrl+S` | Open / Close report viewer |
-| `Ctrl+Z` | Show / Hide main window |
+| `Alt+Q` | Start / Stop monitoring |
+| `Alt+W` | Show / Hide overlay |
+| `Alt+E` | Open / Close report viewer |
+| `Alt+D` | Show / Hide main window |
 
 ---
 
