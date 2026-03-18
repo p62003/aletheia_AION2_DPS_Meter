@@ -37,7 +37,8 @@ Calculates combat data in real time via passive network packet sniffing — **no
 - Eternal Hive PvE score / avatar API integration
 - Server identification (36 servers)
 - JSON theme system (colors, fonts, backgrounds)
-- ExitLag accelerator auto-compatibility
+- Universal accelerator support (ExitLag / UU / Razer / GearUP / LagoFast)
+- Auto character detection (automatically identifies your character on login)
 - Auto-update system
 
 ### In-Game Screenshots
@@ -76,7 +77,7 @@ Calculates combat data in real time via passive network packet sniffing — **no
 A: Make sure Npcap is installed (WinPcap-compatible mode), the application is running as Administrator, and the game is active.
 
 **Q: Latency shows a value but there is no damage data?**
-A: Network offloading (LSO) or a game accelerator may be interfering with packet capture. Try reinstalling Npcap, disabling Large Send Offload on your network adapter, or adjusting your accelerator's launch order.
+A: v7.27 automatically supports most game accelerators. If issues persist, use the included "Aletheia Network Diagnostic Tool" for self-diagnosis. See the TROUBLESHOOTING guide for details.
 
 **Q: How accurate is the data?**
 A: This tool uses non-invasive packet analysis; accuracy depends on packet identification. Godstone damage is included in totals.
