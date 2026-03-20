@@ -65,8 +65,7 @@ Calculates combat data in real time via passive network packet sniffing — **no
 | Hotkey | Function |
 |--------|----------|
 | `Alt+Q` | Start / Stop monitoring |
-| `Alt+W` | Show / Hide overlay |
-| `Alt+E` | Open / Close report viewer |
+| `Alt+E` | Show / Hide overlay |
 | `Alt+D` | Show / Hide main window |
 
 ---
