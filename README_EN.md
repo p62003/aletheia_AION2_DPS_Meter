@@ -77,7 +77,7 @@ Calculates combat data in real time via passive network packet sniffing — **no
 A: Make sure Npcap is installed (WinPcap-compatible mode), the application is running as Administrator, and the game is active.
 
 **Q: Latency shows a value but there is no damage data?**
-A: v7.27 automatically supports most game accelerators. If issues persist, use the included "Aletheia Network Diagnostic Tool" for self-diagnosis. See the TROUBLESHOOTING guide for details.
+A: v7.28 automatically supports most game accelerators. If issues persist, use the included "Aletheia Network Diagnostic Tool" for self-diagnosis. See the TROUBLESHOOTING guide for details.
 
 **Q: How accurate is the data?**
 A: This tool uses non-invasive packet analysis; accuracy depends on packet identification. Godstone damage is included in totals.
