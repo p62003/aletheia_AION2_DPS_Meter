@@ -4,7 +4,7 @@ A non-invasive, real-time DPS meter for AION2 (Aion: Legions of War, TW server).
 
 Calculates combat data in real time via passive network packet sniffing — **no memory modification, no packet tampering, no automation of any kind**.
 
-![Main Window — Dungeon Rankings + Skill Breakdown + Timeline](images/mainwindow1.png)
+![Main Window — Dungeon Rankings + Skill Breakdown + Timeline](images/mainwindow_en.png)
 
 ---
 
@@ -19,11 +19,16 @@ Calculates combat data in real time via passive network packet sniffing — **no
 ### Real-Time Overlay
 - Fully Canvas-rendered, high performance with zero lag
 - Rounded semi-transparent overlay with custom background image support
+- Normal / Mini size toggle (right-click menu)
 - Dual-line title (name + timer/damage)
 - Class-colored DPS bars + faction icons (Elyos / Asmodian)
 - Pairing status indicator + real-time network latency (RTT)
 
-![Overlay Close-Up](images/overlayer_ttf1.png)
+### In-Game Screenshots
+
+| Normal Mode | Mini Mode |
+|:---:|:---:|
+| ![Overlay Normal](images/overlayer_normal_1080.png) | ![Overlay Mini](images/overlayer_mini_1080.png) |
 
 ### Combat Analysis
 - Skill breakdown: damage share, crit rate, average hit, specialization indicators
@@ -31,7 +36,7 @@ Calculates combat data in real time via passive network packet sniffing — **no
 - Report system: auto-generated reports on dungeon/boss/timer session finalization
 - Summon damage automatically merged under the summoner
 
-![Main Window — Combat Details](images/mainwindow.png)
+![Main Window — Combat Details](images/mainwindow_en2.png)
 
 ### Additional Features
 - Eternal Hive PvE score / avatar API integration
@@ -39,13 +44,8 @@ Calculates combat data in real time via passive network packet sniffing — **no
 - JSON theme system (colors, fonts, backgrounds)
 - Universal accelerator support (ExitLag / UU / Razer / GearUP / LagoFast)
 - Auto character detection (automatically identifies your character on login)
+- System tray icon (closing main window keeps app running; double-click to restore)
 - Auto-update system
-
-### In-Game Screenshots
-
-| | |
-|:---:|:---:|
-| ![Overlay in Game — Scene 1](images/overlayer_background1.png) | ![Overlay in Game — Scene 2](images/overlayer_background2.png) |
 
 ---
 
@@ -74,12 +74,15 @@ Calculates combat data in real time via passive network packet sniffing — **no
 ## FAQ
 
 **Q: Why is there no data?**
+
 A: Make sure Npcap is installed (WinPcap-compatible mode), the application is running as Administrator, and the game is active.
 
 **Q: Latency shows a value but there is no damage data?**
+
 A: v7.28 automatically supports most game accelerators. If issues persist, use the included "Aletheia Network Diagnostic Tool" for self-diagnosis. See the TROUBLESHOOTING guide for details.
 
 **Q: How accurate is the data?**
+
 A: This tool uses non-invasive packet analysis; accuracy depends on packet identification. Godstone damage is included in totals.
 
 ---
