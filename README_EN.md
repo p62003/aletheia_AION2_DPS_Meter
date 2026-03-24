@@ -94,6 +94,10 @@ A: Make sure Npcap is installed (WinPcap-compatible mode), the application is ru
 
 A: v7.29 automatically supports most game accelerators. If issues persist, use the included "Aletheia Network Diagnostic Tool" for self-diagnosis.
 
+**Q: Why does my antivirus keep flagging it?**
+
+A: Windows Defender's ML model may flag executables without an EV code signing certificate. Please add the main program (Aletheia_DPS_Meter_AION2.exe), Customizer (Aletheia_Customizer.exe), and Network Diagnostics (Aletheia_Diag.exe) to your exclusion list. We plan to purchase an EV certificate when funding allows.
+
 **Q: How accurate is the data?**
 
 A: v7.29 added LZ4 compressed packet decompression, fixing incomplete damage data in multi-player scenarios. Godstone and summon damage are included in totals.

@@ -96,6 +96,10 @@ A: 請確認已安裝 Npcap（WinPcap 相容模式）、以管理員身分執行
 
 A: v7.29 已自動相容大部分加速器。若仍有問題，請使用隨附的「Aletheia 網路診斷工具」進行自檢。
 
+**Q: 為什麼一直跳防毒偵測？**
+
+A: Windows Defender 的 ML 模型會對未購買 EV 簽章的程式產生誤判。目前請將主程式（Aletheia_DPS_Meter_AION2.exe）、風格自訂器（Aletheia_Customizer.exe）、網路診斷工具（Aletheia_Diag.exe）加入排除清單。未來有資金時會考慮購買 EV 程式碼簽章憑證。
+
 **Q: 數據準確嗎？**
 
 A: v7.29 加入 LZ4 壓縮封包解壓，修復了多人場景傷害數據不完整的問題。神石傷害、召喚物傷害均已計入總量。
