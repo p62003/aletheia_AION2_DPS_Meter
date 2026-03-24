@@ -4,7 +4,7 @@ A non-invasive, real-time DPS meter for AION2 (Aion: Legions of War, TW server).
 
 Calculates combat data in real time via passive network packet sniffing — **no memory modification, no packet tampering, no automation of any kind**.
 
-![Main Window — Dungeon Rankings + Skill Breakdown + Timeline](images/mainwindow_en.png)
+![Tool Suite — Main Window + Overlay + Diagnostics + Customizer](images/allunit_en.png)
 
 ---
 
@@ -18,11 +18,13 @@ Calculates combat data in real time via passive network packet sniffing — **no
 
 ### Real-Time Overlay
 - Fully Canvas-rendered, high performance with zero lag
-- Rounded semi-transparent overlay with custom background image support
+- Semi-transparent overlay with custom background image support
 - Normal / Mini size toggle (right-click menu)
-- Dual-line title (name + timer/damage)
-- Class-colored DPS bars + faction icons (Elyos / Asmodian)
+- Right-click to switch display modes (total damage/percentage, DPS format)
+- **Hover Skill Panel** — hover over a player's rank row to see full skill breakdown
+- Class-colored DPS bars + text shadows + faction icons (Elyos / Asmodian)
 - Pairing status indicator + real-time network latency (RTT)
+- Persistent settings (opacity/size/display mode auto-saved)
 
 ### In-Game Screenshots
 
@@ -34,18 +36,29 @@ Calculates combat data in real time via passive network packet sniffing — **no
 - Skill breakdown: damage share, crit rate, average hit, specialization indicators
 - Skill timeline: cast sequence tracking for rotation and combo analysis
 - Report system: auto-generated reports on dungeon/boss/timer session finalization
+- **Report Panel** — built-in panel with search/filter/upload
+- **Report Upload** — one-click upload to Eternal Hive for sharing
 - Summon damage automatically merged under the summoner
+- Healing skills tracked in a separate section (damage/healing don't overlap)
 
-![Main Window — Combat Details](images/mainwindow_en2.png)
+![Overlay Hover Skill Panel — In-Game Screenshot](images/overlayer_detail.png)
+
+### Report Upload
+
+Upload combat reports to Eternal Hive for detailed analysis and skill timelines:
+
+| Report Overview | Skill Timeline |
+|:---:|:---:|
+| ![Hive Report](images/hive_report.png) | ![Skill Timeline](images/hive_report2.png) |
 
 ### Additional Features
 - Eternal Hive PvE score / avatar API integration
 - Server identification (36 servers)
 - JSON theme system (colors, fonts, backgrounds)
+- **Aletheia Customizer** — standalone settings tool (overlay config/theme management/hotkey recording)
 - Universal accelerator support (ExitLag / UU / Razer / GearUP / LagoFast)
 - Auto character detection (automatically identifies your character on login)
 - System tray icon (closing main window keeps app running; double-click to restore)
-- Auto-update system
 
 ---
 
@@ -64,9 +77,10 @@ Calculates combat data in real time via passive network packet sniffing — **no
 ### Global Hotkeys
 | Hotkey | Function |
 |--------|----------|
-| `Alt+Q` | Start / Stop monitoring |
-| `Alt+E` | Show / Hide overlay |
-| `Alt+D` | Show / Hide main window |
+| `Alt+Q` | Show / Hide overlay |
+| `Alt+E` | Show / Hide main window |
+
+> Hotkeys are customizable via Aletheia Customizer or settings.json.
 
 ---
 
@@ -78,11 +92,11 @@ A: Make sure Npcap is installed (WinPcap-compatible mode), the application is ru
 
 **Q: Latency shows a value but there is no damage data?**
 
-A: v7.28 automatically supports most game accelerators. If issues persist, use the included "Aletheia Network Diagnostic Tool" for self-diagnosis. See the TROUBLESHOOTING guide for details.
+A: v7.29 automatically supports most game accelerators. If issues persist, use the included "Aletheia Network Diagnostic Tool" for self-diagnosis.
 
 **Q: How accurate is the data?**
 
-A: This tool uses non-invasive packet analysis; accuracy depends on packet identification. Godstone damage is included in totals.
+A: v7.29 added LZ4 compressed packet decompression, fixing incomplete damage data in multi-player scenarios. Godstone and summon damage are included in totals.
 
 ---
 
