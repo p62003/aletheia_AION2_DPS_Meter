@@ -6,7 +6,7 @@
 
 透過網路封包分析（Passive Sniffing）技術即時計算戰鬥數據，**不修改遊戲記憶體、不竄改封包、不具備自動化操作功能**。
 
-![工具全覽 — 主視窗 + 浮窗 + 診斷工具 + Customizer](images/allunit_zh.png)
+![主視窗](images/mainwindow_zh.png)
 
 ---
 
@@ -24,8 +24,12 @@
 - Normal / Mini 兩種尺寸切換（右鍵選單）
 - 右鍵切換顯示模式（總傷害/百分比、DPS 格式）
 - **Hover 技能面板** — 滑鼠懸停排名列即時彈出完整技能明細
+- **技能傷害量條** — 每個技能以量條視覺化傷害佔比
+- **DOT 分類** — 同技能直擊與持續傷害自動分開顯示
+- **自動定位** — 啟動時自動貼齊遊戲視窗左上角
 - 職業色計量條 + 文字陰影 + 種族圖標（天族/魔族）
 - 配對狀態燈 + 網路延遲 RTT 顯示
+- 4K DPI 自適應縮放 + 1080P 視窗自動適應
 - 設定持久化（透明度/尺寸/顯示模式自動記憶）
 
 ### 遊戲內實際畫面
@@ -34,16 +38,19 @@
 |:---:|:---:|
 | ![浮窗 Normal](images/overlayer_normal_1080.png) | ![浮窗 Mini](images/overlayer_mini_1080.png) |
 
+| Hover 技能面板 | 右鍵選單 |
+|:---:|:---:|
+| ![Hover 面板](images/overlayer_hover_zh.png) | ![右鍵選單](images/overlayer_menu_zh.png) |
+
 ### 戰鬥分析
 - 技能明細：傷害佔比、暴擊率、平均命中、特化燈號
 - 技能時間軸：施放順序紀錄，確認操作手法與連招
 - 戰報系統：副本/BOSS/計時模式結算自動產生戰報
 - **戰報面板** — 主視窗常駐面板，搜尋/篩選/上傳一站完成
 - **戰報上傳** — 一鍵上傳至永恆蜂窩，分享戰鬥數據
+- **戰報分析** — 查看傷害佔比及同職業歷史平均對比
 - 召喚物傷害自動合併至主人名下
 - 治癒技能獨立分區統計（傷害/治癒不互相擠壓）
-
-![浮窗 Hover 技能面板 — 遊戲內實機畫面](images/overlayer_detail.png)
 
 ### 戰報上傳
 
@@ -53,14 +60,24 @@
 |:---:|:---:|
 | ![蜂窩戰報](images/hive_report.png) | ![技能時間軸](images/hive_report2.png) |
 
+### 附屬工具
+
+| 戰報分析 | 風格自訂 | 網路診斷 |
+|:---:|:---:|:---:|
+| ![戰報分析](images/analyze_tool_zh.png) | ![風格自訂](images/custom_tool_zh.png) | ![網路診斷](images/network_tool.png) |
+
+- **Aletheia Analyzer** — 戰報分析工具，查看個人表現與歷史平均對比
+- **Aletheia Customizer** — 獨立設定工具（浮窗設定/主題管理/熱鍵錄製/浮窗背景開關）
+- **Aletheia 網路診斷** — 連線環境自檢，排查封包擷取問題
+
 ### 其他
 - 永恆蜂窩 PvE 評分 / 頭像 API 查詢
 - 伺服器識別（36 伺服器）
 - JSON 自訂主題系統（顏色、字體、背景）
-- **Aletheia Customizer** — 獨立設定工具（浮窗設定/主題管理/熱鍵錄製）
 - 通用加速器相容（ExitLag / UU / 雷神 / GearUP / LagoFast）
 - 自動角色偵測（進入遊戲後自動識別暱稱）
 - 系統匣常駐（關閉主視窗不退出，雙擊圖示叫回）
+- 快捷鍵改用 Win32 API，軟體巨集使用者不再卡頓
 
 ---
 
@@ -94,15 +111,15 @@ A: 請確認已安裝 Npcap（WinPcap 相容模式）、以管理員身分執行
 
 **Q: 延遲有數值但完全沒有傷害數據？**
 
-A: v7.29 已自動相容大部分加速器。若仍有問題，請使用隨附的「Aletheia 網路診斷工具」進行自檢。
+A: v7.30 已自動相容大部分加速器。若仍有問題，請使用隨附的「Aletheia 網路診斷工具」進行自檢。
 
 **Q: 為什麼一直跳防毒偵測？**
 
-A: Windows Defender 的 ML 模型會對未購買 EV 簽章的程式產生誤判。目前請將主程式（Aletheia_DPS_Meter_AION2.exe）、風格自訂器（Aletheia_Customizer.exe）、網路診斷工具（Aletheia_Diag.exe）加入排除清單。未來有資金時會考慮購買 EV 程式碼簽章憑證。
+A: Windows Defender 的 ML 模型會對未購買 EV 簽章的程式產生誤判。目前請將主程式（Aletheia_DPS_Meter_AION2.exe）、戰報分析（Aletheia_Analyzer.exe）、風格自訂器（Aletheia_Customizer.exe）、網路診斷工具（Aletheia_Diag.exe）加入排除清單。未來有資金時會考慮購買 EV 程式碼簽章憑證。
 
 **Q: 數據準確嗎？**
 
-A: v7.29 加入 LZ4 壓縮封包解壓，修復了多人場景傷害數據不完整的問題。神石傷害、召喚物傷害均已計入總量。
+A: v7.30 加入 DOT 分類及技能變體合併，傷害數據更加精確。神石傷害、召喚物傷害均已計入總量。
 
 ---
 

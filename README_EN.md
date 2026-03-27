@@ -1,10 +1,12 @@
+**English** | **[繁體中文](README.md)**
+
 # Aletheia — AION2 DPS Meter
 
 A non-invasive, real-time DPS meter for AION2 (Aion: Legions of War, TW server).
 
 Calculates combat data in real time via passive network packet sniffing — **no memory modification, no packet tampering, no automation of any kind**.
 
-![Tool Suite — Main Window + Overlay + Diagnostics + Customizer](images/allunit_en.png)
+![Main Window](images/mainwindow_en.png)
 
 ---
 
@@ -22,8 +24,12 @@ Calculates combat data in real time via passive network packet sniffing — **no
 - Normal / Mini size toggle (right-click menu)
 - Right-click to switch display modes (total damage/percentage, DPS format)
 - **Hover Skill Panel** — hover over a player's rank row to see full skill breakdown
+- **Skill Damage Bars** — visual bars for each skill's damage contribution
+- **DOT Classification** — direct hits and DOT damage split automatically (e.g. "Griffin Arrow" vs "Griffin Arrow - DOT")
+- **Auto-Position** — overlay snaps to the game window on startup
 - Class-colored DPS bars + text shadows + faction icons (Elyos / Asmodian)
 - Pairing status indicator + real-time network latency (RTT)
+- 4K DPI auto-scaling + 1080P window auto-fit
 - Persistent settings (opacity/size/display mode auto-saved)
 
 ### In-Game Screenshots
@@ -32,16 +38,19 @@ Calculates combat data in real time via passive network packet sniffing — **no
 |:---:|:---:|
 | ![Overlay Normal](images/overlayer_normal_1080.png) | ![Overlay Mini](images/overlayer_mini_1080.png) |
 
+| Hover Skill Panel | Right-Click Menu |
+|:---:|:---:|
+| ![Hover Panel](images/overlayer_hover_en.png) | ![Right-Click Menu](images/overlayer_menu_en.png) |
+
 ### Combat Analysis
 - Skill breakdown: damage share, crit rate, average hit, specialization indicators
 - Skill timeline: cast sequence tracking for rotation and combo analysis
 - Report system: auto-generated reports on dungeon/boss/timer session finalization
 - **Report Panel** — built-in panel with search/filter/upload
 - **Report Upload** — one-click upload to Eternal Hive for sharing
+- **Report Analyzer** — compare your performance against historical class averages
 - Summon damage automatically merged under the summoner
 - Healing skills tracked in a separate section (damage/healing don't overlap)
-
-![Overlay Hover Skill Panel — In-Game Screenshot](images/overlayer_detail.png)
 
 ### Report Upload
 
@@ -51,14 +60,24 @@ Upload combat reports to Eternal Hive for detailed analysis and skill timelines:
 |:---:|:---:|
 | ![Hive Report](images/hive_report.png) | ![Skill Timeline](images/hive_report2.png) |
 
+### Companion Tools
+
+| Report Analyzer | Customizer | Network Diagnostics |
+|:---:|:---:|:---:|
+| ![Report Analyzer](images/analyze_tool_en.png) | ![Customizer](images/custom_tool_en.png) | ![Network Diagnostics](images/network_tool.png) |
+
+- **Aletheia Analyzer** — compare your damage breakdown against historical class averages
+- **Aletheia Customizer** — standalone settings tool (overlay config/theme management/hotkey recording/background toggle)
+- **Aletheia Network Diagnostics** — self-check tool for troubleshooting packet capture issues
+
 ### Additional Features
 - Eternal Hive PvE score / avatar API integration
 - Server identification (36 servers)
 - JSON theme system (colors, fonts, backgrounds)
-- **Aletheia Customizer** — standalone settings tool (overlay config/theme management/hotkey recording)
 - Universal accelerator support (ExitLag / UU / Razer / GearUP / LagoFast)
 - Auto character detection (automatically identifies your character on login)
 - System tray icon (closing main window keeps app running; double-click to restore)
+- Win32 API hotkeys — no global keyboard hooks, zero interference with macros
 
 ---
 
@@ -92,15 +111,15 @@ A: Make sure Npcap is installed (WinPcap-compatible mode), the application is ru
 
 **Q: Latency shows a value but there is no damage data?**
 
-A: v7.29 automatically supports most game accelerators. If issues persist, use the included "Aletheia Network Diagnostic Tool" for self-diagnosis.
+A: v7.30 automatically supports most game accelerators. If issues persist, use the included "Aletheia Network Diagnostic Tool" for self-diagnosis.
 
 **Q: Why does my antivirus keep flagging it?**
 
-A: Windows Defender's ML model may flag executables without an EV code signing certificate. Please add the main program (Aletheia_DPS_Meter_AION2.exe), Customizer (Aletheia_Customizer.exe), and Network Diagnostics (Aletheia_Diag.exe) to your exclusion list. We plan to purchase an EV certificate when funding allows.
+A: Windows Defender's ML model may flag executables without an EV code signing certificate. Please add the main program (Aletheia_DPS_Meter_AION2.exe), Analyzer (Aletheia_Analyzer.exe), Customizer (Aletheia_Customizer.exe), and Network Diagnostics (Aletheia_Diag.exe) to your exclusion list. We plan to purchase an EV certificate when funding allows.
 
 **Q: How accurate is the data?**
 
-A: v7.29 added LZ4 compressed packet decompression, fixing incomplete damage data in multi-player scenarios. Godstone and summon damage are included in totals.
+A: v7.30 adds DOT classification and skill variant merging for more precise damage attribution. Godstone and summon damage are included in totals.
 
 ---
 
