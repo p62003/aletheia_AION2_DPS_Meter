@@ -32,17 +32,13 @@
 - 4K DPI 自适应缩放
 - 设置持久化（透明度/尺寸/显示模式自动记忆）
 
-### 新旧版浮窗对比
-
-<video src="images/OvsN_runtime.mp4" controls width="100%"></video>
-
-<video src="images/OvsN_hover.mp4" controls width="100%"></video>
-
 ### 游戏内实际画面
 
-| Normal 模式 | Mini 模式 |
-|:---:|:---:|
-| ![浮窗 Normal](images/overlay_normal_zh.png) | ![浮窗 Mini](images/overlay_mini_zh.png) |
+![浮窗 Normal](images/overlay_normal_zh.png)
+
+| Mini 模式 |
+|:---:|
+| ![浮窗 Mini](images/overlay_mini_zh.png) |
 
 ### Skill MAP — 全队技能时间轴
 
@@ -80,9 +76,13 @@
 
 ### 附属工具
 
-| 战报分析（DPS） | 战报分析（HPS） | 战报分析（竞速模式） |
-|:---:|:---:|:---:|
-| ![战报分析 DPS](images/analyze_tool_zh1.png) | ![战报分析 HPS](images/analyze_tool_zh2.png) | ![战报分析 竞速](images/analyze_tool_zh3.png) |
+| 战报分析（DPS） | 战报分析（HPS） |
+|:---:|:---:|
+| ![战报分析 DPS](images/analyze_tool_zh1.png) | ![战报分析 HPS](images/analyze_tool_zh2.png) |
+
+| 战报分析（竞速模式） |
+|:---:|
+| ![战报分析 竞速](images/analyze_tool_zh3.png) |
 
 | 网卡选择 | 环境诊断 |
 |:---:|:---:|

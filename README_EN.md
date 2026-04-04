@@ -32,17 +32,13 @@ Calculates combat data in real time via passive network packet sniffing — **no
 - 4K DPI auto-scaling
 - Persistent settings (opacity/size/display mode auto-saved)
 
-### Old vs New Overlay Comparison
-
-<video src="images/OvsN_runtime.mp4" controls width="100%"></video>
-
-<video src="images/OvsN_hover.mp4" controls width="100%"></video>
-
 ### In-Game Screenshots
 
-| Normal Mode | Mini Mode |
-|:---:|:---:|
-| ![Overlay Normal](images/overlay_normal_en.png) | ![Overlay Mini](images/overlay_mini_en.png) |
+![Overlay Normal](images/overlay_normal_en.png)
+
+| Mini Mode |
+|:---:|
+| ![Overlay Mini](images/overlay_mini_en.png) |
 
 ### Skill MAP — Full Party Skill Timeline
 
@@ -84,9 +80,13 @@ Upload combat reports to Eternal Hive for detailed analysis and skill timelines:
 
 ### Companion Tools
 
-| Report Analyzer (DPS) | Report Analyzer (HPS) | Report Analyzer (Speedrun) |
-|:---:|:---:|:---:|
-| ![Analyzer DPS](images/analyze_tool_en1.png) | ![Analyzer HPS](images/analyze_tool_en2.png) | ![Analyzer Speedrun](images/analyze_tool_en3.png) |
+| Report Analyzer (DPS) | Report Analyzer (HPS) |
+|:---:|:---:|
+| ![Analyzer DPS](images/analyze_tool_en1.png) | ![Analyzer HPS](images/analyze_tool_en2.png) |
+
+| Report Analyzer (Speedrun) |
+|:---:|
+| ![Analyzer Speedrun](images/analyze_tool_en3.png) |
 
 | Interface Selection | Environment Diagnostics |
 |:---:|:---:|
