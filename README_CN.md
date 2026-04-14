@@ -1,10 +1,23 @@
-**[English](README_EN.md)** | **[繁體中文](README.md)** | **简体中文**
+**[English](README.md)** | **[繁體中文](README_ZH.md)** | **简体中文**
 
 # Aletheia — AION2 DPS Meter
 
 非侵入式的 AION2（永恒纪元2，台服）实时 DPS 计量器。
 
 通过网络封包分析（Passive Sniffing）技术实时计算战斗数据，**不修改游戏内存、不篡改封包、不具备自动化操作功能**。
+
+## 支持本项目
+
+如果这个工具对你有帮助，欢迎支持我们继续开发：
+
+- **银行转账（中国信托 822）**：`7505-4015-7378`
+- **加密货币 — USDT / USDC（BEP20 / BSC 链）**：`0x55c439b27807415e80452f59ba00fee3441a802d`
+- **Discord**：https://discord.gg/x52CBg4rcE
+- **开发者邮箱**：dont.stop.ha@gmail.com
+
+您的一杯咖啡，是我们继续努力的动力。
+
+---
 
 ![主窗口](images/mainwindow_zh.png)
 
@@ -156,10 +169,9 @@ A: v8.0 包含连续技分组、DOT 分类、技能合并及 Protobuf tag 升级
 
 ---
 
-## 联系与赞助
+## 联系
 
 - Discord：https://discord.gg/x52CBg4rcE
 - 开发者邮箱：dont.stop.ha@gmail.com
-- 赞助（中国信托 822）��7505-4015-7378
 
-您的一杯咖啡，是我们继续努力的动力。
+赞助渠道请见顶部的 [支持本项目](#支持本项目) 区块。

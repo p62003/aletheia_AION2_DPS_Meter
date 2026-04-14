@@ -1,165 +1,181 @@
-**[English](README_EN.md)** | **繁體中文** | **[简体中文](README_CN.md)**
+**English** | **[繁體中文](README_ZH.md)** | **[简体中文](README_CN.md)**
 
 # Aletheia — AION2 DPS Meter
 
-非侵入式的 AION2（永恆紀元2，台版）即時 DPS 計量器。
+A non-invasive, real-time DPS meter for AION2 (Aion: Legions of War, TW server).
 
-透過網路封包分析（Passive Sniffing）技術即時計算戰鬥數據，**不修改遊戲記憶體、不竄改封包、不具備自動化操作功能**。
+Calculates combat data in real time via passive network packet sniffing — **no memory modification, no packet tampering, no automation of any kind**.
 
-![主視窗](images/mainwindow_zh.png)
+## Support the Project
 
----
+If this tool has been useful to you, please consider supporting continued development:
 
-## 功能特色
+- **Bank Transfer (CTBC Bank 822)**: `7505-4015-7378`
+- **Crypto — USDT / USDC (BEP20 / BSC network)**: `0x55c439b27807415e80452f59ba00fee3441a802d`
+- **Discord**: https://discord.gg/x52CBg4rcE
+- **Email**: dont.stop.ha@gmail.com
 
-### 四模式系統
-- **全域模式** — 統計所有玩家的即時 DPS 排行
-- **計時模式** — 木樁專用，10 秒無攻擊自動結算，DOT 不影響計時
-- **副本模式** — 自動偵測進入副本，隊員傷害獨立統計，離開自動結算
-- **BOSS 模式** — 白名單 BOSS 自動追蹤，死亡後自動結算
-
-### 即時浮窗 (Overlay)
-- QPainter 自繪渲染，高效能零延遲
-- 半透明浮窗，背景透明度僅影響底圖（文字保持不透明）
-- Normal / Mini 兩種尺寸切換（右鍵選單）
-- 右鍵選單整合自訂功能（尺寸/傷害格式/DPS格式/透明度/背景圖/主題）
-- **Hover 技能面板** — 滑鼠懸停排名列即時彈出完整技能明細
-- **技能心電圖 Cast ECG** — 波形圖呈現技能施放節奏（波高=傷害量、波色=銜接速度）
-- **DOT 分類** — 同技能直擊與持續傷害自動分開顯示
-- **自動定位** — 啟動時自動貼齊遊戲視窗左上角
-- 金屬質感暱稱 + 職業色漸層量條 + hover 呼吸光效 + 種族圖標
-- 配對狀態燈 + 網路延遲 RTT + 加速器偵測狀態
-- 4K DPI 自適應縮放
-- 設定持久化（透明度/尺寸/顯示模式自動記憶）
-
-### 遊戲內實際畫面
-
-![浮窗 Normal](images/overlay_normal_zh.png)
-
-| Mini 模式 |
-|:---:|
-| ![浮窗 Mini](images/overlay_mini_zh.png) |
-
-### Skill MAP — 全隊技能時間軸
-
-以 2D 時間軸呈現全隊技能施放記錄 — 「這個時刻，全隊每個人在做什麼」。
-
-- X 軸為時間、Y 軸為每位玩家的每個技能獨立一行
-- 多層收合（玩家級 + 技能級）、技能隱藏/恢復
-- 框選分析（Alt+拖拽）— 穿透多人統計 casts / damage / CPM
-- 技能圖標語意色外框（暴擊紅/強擊橙/完美紫/DoT 淺藍/治癒綠）
-- 定位線縮放、Fit 一鍵適配、連續技分組
-
-| 全隊總覽 + 框選統計 | 放大檢視技能細節 |
-|:---:|:---:|
-| ![Skill MAP 總覽](images/skillmap_main.png) | ![Skill MAP 細節](images/skillmap_main2.png) |
-
-### 戰鬥分析
-- 技能明細：傷害佔比、暴擊率、平均命中、特化燈號
-- 技能時間軸：施放順序紀錄，確認操作手法與連招
-- **cHPS 治癒統計** — 戰鬥細節、戰報、分析工具全面支援治癒量統計
-- 戰報系統：副本/BOSS/計時模式結算自動產生戰報
-- **戰報管理** — 瀏覽、篩選（職業/cDPS/cHPS 範圍）、批量刪除
-- **戰報面板** — 主視窗側邊抽屜，搜尋/篩選/上傳一站完成
-- **戰報上傳** — 一鍵上傳至永恆蜂窩，分享戰鬥數據
-- **戰報分析** — 傷害佔比及同職業歷史平均對比，支援傷害/治癒模式切換及競速模式
-- 召喚物傷害自動合併至主人名下
-- 治癒技能獨立分區統計（傷害/治癒不互相擠壓）
-
-### 戰報上傳
-
-上傳戰報至永恆蜂窩，查看完整分析與技能時間軸：
-
-| 戰報總覽 | 技能時間軸 |
-|:---:|:---:|
-| ![蜂窩戰報](images/hive_report.png) | ![技能時間軸](images/hive_report2.png) |
-
-### 附屬工具
-
-| 戰報分析（DPS） | 戰報分析（HPS） |
-|:---:|:---:|
-| ![戰報分析 DPS](images/analyze_tool_zh1.png) | ![戰報分析 HPS](images/analyze_tool_zh2.png) |
-
-| 戰報分析（競速模式） |
-|:---:|
-| ![戰報分析 競速](images/analyze_tool_zh3.png) |
-
-| 網卡選擇 | 環境診斷 |
-|:---:|:---:|
-| ![網卡選擇](images/interface_zh.png) | ![環境診斷](images/net_report_zh.png) |
-
-- **Aletheia Analyzer** — 戰報分析工具，DPS/HPS/競速三種模式，查看個人表現與歷史平均對比
-- **Aletheia SkillMAP** — 全隊技能時間軸，以 2D MAP 呈現全隊技能施放記錄
-- **環境診斷** — 整合至主視窗，一鍵蒐集系統資訊匯出 JSON 報告
-
-### 其他
-- 永恆蜂窩 PvE 評分 / 頭像 API 查詢
-- 伺服器識別（36 伺服器）
-- JSON 自訂主題系統（深色/淺色基礎群，顏色、字體、背景）
-- 通用加速器相容（ExitLag / UU / 雷神 / GearUP / LagoFast / Clash）
-- 加速器自動偵測 — 狀態列顯示偵測到的加速器名稱及 port，封包中斷自動切換候選連線
-- 自動角色偵測（進入遊戲後自動識別暱稱）
-- 系統匣常駐（關閉主視窗不退出，雙擊圖示叫回）
-- 快捷鍵改用 Win32 API，軟體巨集使用者不再卡頓
-- 三語切換（繁體中文 / 简体中文 / English），即時生效無需重啟
-- 技能/副本/BOSS 名稱英文化
+Your support keeps this project alive.
 
 ---
 
-## 安裝與使用
+![Main Window](images/mainwindow_en.png)
 
-### 系統需求
+---
+
+## Features
+
+### Four Display Modes
+- **Global** — Real-time DPS rankings for all nearby players
+- **Timer** — Training dummy mode with 10s idle auto-finalize; DOT does not extend the timer
+- **Dungeon** — Automatically activates upon entering an instance; independent party stats, auto-finalize on exit
+- **Boss** — Whitelisted bosses are tracked automatically; auto-finalize on boss death
+
+### Real-Time Overlay
+- QPainter custom rendering, high performance with zero lag
+- Semi-transparent overlay, background opacity affects only the backdrop (text stays fully opaque)
+- Normal / Mini size toggle (right-click menu)
+- Right-click menu integrates all customization (size/damage format/DPS format/opacity/background/theme)
+- **Hover Skill Panel** — hover over a player's rank row to see full skill breakdown
+- **Cast ECG** — waveform visualization of skill cast rhythm (wave height = damage, wave color = cast speed)
+- **DOT Classification** — direct hits and DOT damage split automatically
+- **Auto-Position** — overlay snaps to the game window on startup
+- Metallic nickname text + class-colored gradient bars + hover glow effect + faction icons
+- Pairing status indicator + real-time network latency (RTT) + accelerator detection
+- 4K DPI auto-scaling
+- Persistent settings (opacity/size/display mode auto-saved)
+
+### In-Game Screenshots
+
+![Overlay Normal](images/overlay_normal_en.png)
+
+| Mini Mode |
+|:---:|
+| ![Overlay Mini](images/overlay_mini_en.png) |
+
+### Skill MAP — Full Party Skill Timeline
+
+A 2D timeline view of the entire party's skill casts — "What was everyone doing at this exact moment?"
+
+- X-axis = time, Y-axis = one row per skill per player
+- Multi-level collapse (player-level + skill-level), skill hide/restore
+- Region select analysis (Alt+drag) — cross-player stats for casts / damage / CPM
+- Semantic-colored skill icon borders (crit red / strong orange / perfect purple / DoT cyan / heal green)
+- Playhead-centered zoom, Fit button, combo chain grouping
+
+| Full Party Overview + Region Select | Zoomed-In Skill Detail |
+|:---:|:---:|
+| ![Skill MAP Overview](images/skillmap_main.png) | ![Skill MAP Detail](images/skillmap_main2.png) |
+
+| English Mode with Healing Stats |
+|:---:|
+| ![Skill MAP EN HPS](images/skillmap_en_hps.png) |
+
+### Combat Analysis
+- Skill breakdown: damage share, crit rate, average hit, specialization indicators
+- Skill timeline: cast sequence tracking for rotation and combo analysis
+- **cHPS Healing Stats** — combat detail, reports, and analyzer all support healing metrics
+- Report system: auto-generated reports on dungeon/boss/timer session finalization
+- **Report Management** — browse, filter (class/cDPS/cHPS range), batch delete
+- **Report Panel** — sidebar drawer with search/filter/upload
+- **Report Upload** — one-click upload to Eternal Hive for sharing
+- **Report Analyzer** — compare performance against historical class averages, with DPS/HPS/speedrun modes
+- Summon damage automatically merged under the summoner
+- Healing skills tracked in a separate section (damage/healing don't overlap)
+
+### Report Upload
+
+Upload combat reports to Eternal Hive for detailed analysis and skill timelines:
+
+| Report Overview | Skill Timeline |
+|:---:|:---:|
+| ![Hive Report](images/hive_report.png) | ![Skill Timeline](images/hive_report2.png) |
+
+### Companion Tools
+
+| Report Analyzer (DPS) | Report Analyzer (HPS) |
+|:---:|:---:|
+| ![Analyzer DPS](images/analyze_tool_en1.png) | ![Analyzer HPS](images/analyze_tool_en2.png) |
+
+| Report Analyzer (Speedrun) |
+|:---:|
+| ![Analyzer Speedrun](images/analyze_tool_en3.png) |
+
+| Interface Selection | Environment Diagnostics |
+|:---:|:---:|
+| ![Interface Selection](images/interface_en.png) | ![Diagnostics](images/net_report_en.png) |
+
+- **Aletheia Analyzer** — report analysis with DPS/HPS/speedrun modes, compare against historical class averages
+- **Aletheia SkillMAP** — full party skill timeline, 2D MAP visualization of all party members' skill casts
+- **Environment Diagnostics** — integrated into main window, one-click system info collection and JSON report export
+
+### Additional Features
+- Eternal Hive PvE score / avatar API integration
+- Server identification (36 servers)
+- JSON theme system (dark/light base groups, colors, fonts, backgrounds)
+- Universal accelerator support (ExitLag / UU / Razer / GearUP / LagoFast / Clash)
+- Accelerator auto-detection — status bar shows detected accelerator name and port, auto-switch on packet loss
+- Auto character detection (automatically identifies your character on login)
+- System tray icon (closing main window keeps app running; double-click to restore)
+- Win32 API hotkeys — no global keyboard hooks, zero interference with macros
+- Tri-lingual switching (繁體中文 / 简体中文 / English), instant effect without restart
+- Full English localization for skills, dungeons, and boss names
+
+---
+
+## Installation & Usage
+
+### Requirements
 - Windows 10/11
-- [Npcap](https://npcap.com/#download)（安裝時勾選「Install Npcap in WinPcap API-compatible Mode」）
+- [Npcap](https://npcap.com/#download) (check "Install Npcap in WinPcap API-compatible Mode" during installation)
 
-### 快速上手
-1. 安裝 Npcap
-2. 下載最新版本 → [Releases](../../releases)
-3. 解壓縮後，**右鍵 → 以系統管理員身份執行**
-4. 進入遊戲即可看到數據
+### Quick Start
+1. Install Npcap
+2. Download the latest version → [Releases](../../releases)
+3. Extract, then **right-click → Run as Administrator**
+4. Launch the game and data will appear automatically
 
-### 全域快捷鍵
-| 快捷鍵 | 功能 |
-|--------|------|
-| `Alt+Q` | 顯示 / 隱藏浮窗 |
-| `Alt+E` | 顯示 / 隱藏主視窗 |
+### Global Hotkeys
+| Hotkey | Function |
+|--------|----------|
+| `Alt+Q` | Show / Hide overlay |
+| `Alt+E` | Show / Hide main window |
 
-> 快捷鍵可透過右鍵選單或 settings.json 自訂。
-
----
-
-## 常見問題
-
-**Q: 為什麼沒有數據？**
-
-A: 請確認已安裝 Npcap（WinPcap 相容模式）、以管理員身分執行、且遊戲正在執行中。
-
-**Q: 延遲有數值但完全沒有傷害數據？**
-
-A: v8.0 已自動相容大部分加速器，支援候選連線自動切換。若仍有問題，請使用主視窗內建的環境診斷功能進行自檢。
-
-**Q: 為什麼一直跳防毒偵測？**
-
-A: Windows Defender 的 ML 模型會對未購買 EV 簽章的程式產生誤判。目前請將主程式及輔助工具加入排除清單。未來有資金時會考慮購買 EV 程式碼簽章憑證。
-
-**Q: 數據準確嗎？**
-
-A: v8.0 包含連續技分組、DOT 分類、技能合併及 Protobuf tag 升級，傷害數據更加精確。神石傷害、召喚物傷害均已計入總量。
+> Hotkeys are customizable via right-click menu or settings.json.
 
 ---
 
-## 免責聲明
+## FAQ
 
-本程式僅供技術交流與戰鬥數據分析使用。僅透過網路封包分析技術計算戰鬥數據，不修改遊戲記憶體、不竄改通訊封包，亦不具備任何自動化操作功能。
+**Q: Why is there no data?**
 
-儘管採非侵入式設計，但官方對「第三方輔助程式」定義不一。使用前請自行評估 AION2 官方政策。若因使用本工具導致帳號受限或任何損失，開發者不負法律責任或補償義務，執行程式即視為同意此聲明。
+A: Make sure Npcap is installed (WinPcap-compatible mode), the application is running as Administrator, and the game is active.
+
+**Q: Latency shows a value but there is no damage data?**
+
+A: v8.0 automatically supports most game accelerators with candidate auto-switching. If issues persist, use the built-in environment diagnostics for self-diagnosis.
+
+**Q: Why does my antivirus keep flagging it?**
+
+A: Windows Defender's ML model may flag executables without an EV code signing certificate. Please add the main program and companion tools to your exclusion list. We plan to purchase an EV certificate when funding allows.
+
+**Q: How accurate is the data?**
+
+A: v8.0 includes combo chain grouping, DOT classification, skill merging, and Protobuf tag upgrades for more precise damage attribution. Godstone and summon damage are included in totals.
 
 ---
 
-## 聯絡與贊助
+## Disclaimer
 
-- Discord：https://discord.gg/x52CBg4rcE
-- 開發者信箱：dont.stop.ha@gmail.com
-- 贊助（中國信託 822）：7505-4015-7378
+This software is provided solely for technical research and combat data analysis. It calculates combat data exclusively through passive network packet analysis — it does not modify game memory, alter network packets, or provide any form of automation.
 
-您的一杯咖啡，是我們繼續努力的動力。
+Despite its non-invasive design, the game publisher's definition of "third-party tools" may vary. Please review AION2's official policy before use. The developer assumes no legal liability or obligation to compensate for any account restrictions or losses resulting from the use of this software. By running the application, you agree to this disclaimer.
+
+---
+
+## Contact
+
+- Discord: https://discord.gg/x52CBg4rcE
+- Email: dont.stop.ha@gmail.com
+
+See [Support the Project](#support-the-project) section above for donation channels.
