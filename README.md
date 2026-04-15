@@ -10,12 +10,6 @@ Calculates combat data in real time via passive network packet sniffing — **no
 
 If this tool has been useful to you, please consider supporting continued development:
 
-**Bank Transfer (CTBC Bank 822)**
-
-```
-7505-4015-7378
-```
-
 **Crypto — USDT / USDC (BEP20 / BSC network)**
 
 ```
