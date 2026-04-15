@@ -10,10 +10,20 @@ Calculates combat data in real time via passive network packet sniffing — **no
 
 If this tool has been useful to you, please consider supporting continued development:
 
-- **Bank Transfer (CTBC Bank 822)**: `7505-4015-7378`
-- **Crypto — USDT / USDC (BEP20 / BSC network)**: `0x55c439b27807415e80452f59ba00fee3441a802d`
-- **Discord**: https://discord.gg/x52CBg4rcE
-- **Email**: dont.stop.ha@gmail.com
+**Bank Transfer (CTBC Bank 822)**
+
+```
+7505-4015-7378
+```
+
+**Crypto — USDT / USDC (BEP20 / BSC network)**
+
+```
+0x55c439b27807415e80452f59ba00fee3441a802d
+```
+
+**Discord**: https://discord.gg/x52CBg4rcE
+**Email**: dont.stop.ha@gmail.com
 
 Your support keeps this project alive.
 

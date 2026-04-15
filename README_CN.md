@@ -10,10 +10,20 @@
 
 如果这个工具对你有帮助，欢迎支持我们继续开发：
 
-- **银行转账（中国信托 822）**：`7505-4015-7378`
-- **加密货币 — USDT / USDC（BEP20 / BSC 链）**：`0x55c439b27807415e80452f59ba00fee3441a802d`
-- **Discord**：https://discord.gg/x52CBg4rcE
-- **开发者邮箱**：dont.stop.ha@gmail.com
+**银行转账（中国信托 822）**
+
+```
+7505-4015-7378
+```
+
+**加密货币 — USDT / USDC（BEP20 / BSC 链）**
+
+```
+0x55c439b27807415e80452f59ba00fee3441a802d
+```
+
+**Discord**：https://discord.gg/x52CBg4rcE
+**开发者邮箱**：dont.stop.ha@gmail.com
 
 您的一杯咖啡，是我们继续努力的动力。
 
