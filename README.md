@@ -10,14 +10,22 @@ Calculates combat data in real time via passive network packet sniffing — **no
 
 If this tool has been useful to you, please consider supporting continued development:
 
-**Crypto — USDT / USDC (BEP20 / BSC network)**
+### ☕ Ko-fi — recommended
+
+[![Support on Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/rj0217)
+
+Direct link: [ko-fi.com/rj0217](https://ko-fi.com/rj0217)
+
+### 🪙 Crypto — USDT / USDC (BEP20 / BSC network)
 
 ```
 0x55c439b27807415e80452f59ba00fee3441a802d
 ```
 
-**Discord**: https://discord.gg/x52CBg4rcE
-**Email**: dont.stop.ha@gmail.com
+### 💬 Contact
+
+- **Discord**: https://discord.gg/x52CBg4rcE
+- **Email**: dont.stop.ha@gmail.com
 
 Your support keeps this project alive.
 

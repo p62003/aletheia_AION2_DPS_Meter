@@ -10,14 +10,22 @@
 
 如果这个工具对你有帮助，欢迎支持我们继续开发：
 
-**加密货币 — USDT / USDC（BEP20 / BSC 链）**
+### ☕ Ko-fi — 推荐
+
+[![Ko-fi 赞助](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/rj0217)
+
+直接链接：[ko-fi.com/rj0217](https://ko-fi.com/rj0217)
+
+### 🪙 加密货币 — USDT / USDC（BEP20 / BSC 链）
 
 ```
 0x55c439b27807415e80452f59ba00fee3441a802d
 ```
 
-**Discord**：https://discord.gg/x52CBg4rcE
-**开发者邮箱**：dont.stop.ha@gmail.com
+### 💬 联系
+
+- **Discord**：https://discord.gg/x52CBg4rcE
+- **开发者邮箱**：dont.stop.ha@gmail.com
 
 您的一杯咖啡，是我们继续努力的动力。
 

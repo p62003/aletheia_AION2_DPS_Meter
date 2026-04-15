@@ -10,20 +10,28 @@
 
 如果這個工具對你有幫助，歡迎支持我們繼續開發：
 
-**銀行轉帳（中國信託 822）**
+### ☕ Ko-fi — 推薦
+
+[![Ko-fi 贊助](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/rj0217)
+
+直接連結：[ko-fi.com/rj0217](https://ko-fi.com/rj0217)
+
+### 🏦 銀行轉帳（僅限台灣用戶，中國信託 822）
 
 ```
 7505-4015-7378
 ```
 
-**加密貨幣 — USDT / USDC（BEP20 / BSC 鏈）**
+### 🪙 加密貨幣 — USDT / USDC（BEP20 / BSC 鏈）
 
 ```
 0x55c439b27807415e80452f59ba00fee3441a802d
 ```
 
-**Discord**：https://discord.gg/x52CBg4rcE
-**開發者信箱**：dont.stop.ha@gmail.com
+### 💬 聯絡
+
+- **Discord**：https://discord.gg/x52CBg4rcE
+- **開發者信箱**：dont.stop.ha@gmail.com
 
 您的一杯咖啡，是我們繼續努力的動力。
 
