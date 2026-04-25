@@ -109,9 +109,9 @@ Upload combat reports to Eternal Hive for detailed analysis and skill timelines:
 |:---:|:---:|
 | ![Analyzer DPS](images/analyze_tool_en1.png) | ![Analyzer HPS](images/analyze_tool_en2.png) |
 
-| Report Analyzer (Speedrun) |
-|:---:|
-| ![Analyzer Speedrun](images/analyze_tool_en3.png) |
+| Report Analyzer (Speedrun) | Report Management |
+|:---:|:---:|
+| ![Analyzer Speedrun](images/analyze_tool_en3.png) | ![Report Management](images/tool_Manage_en.png) |
 
 | Interface Selection | Environment Diagnostics |
 |:---:|:---:|

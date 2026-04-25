@@ -105,9 +105,9 @@
 |:---:|:---:|
 | ![战报分析 DPS](images/analyze_tool_zh1.png) | ![战报分析 HPS](images/analyze_tool_zh2.png) |
 
-| 战报分析（竞速模式） |
-|:---:|
-| ![战报分析 竞速](images/analyze_tool_zh3.png) |
+| 战报分析（竞速模式） | 战报管理 |
+|:---:|:---:|
+| ![战报分析 竞速](images/analyze_tool_zh3.png) | ![战报管理](images/tool_Manage_zh.png) |
 
 | 网卡选择 | 环境诊断 |
 |:---:|:---:|

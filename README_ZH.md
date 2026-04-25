@@ -111,9 +111,9 @@
 |:---:|:---:|
 | ![戰報分析 DPS](images/analyze_tool_zh1.png) | ![戰報分析 HPS](images/analyze_tool_zh2.png) |
 
-| 戰報分析（競速模式） |
-|:---:|
-| ![戰報分析 競速](images/analyze_tool_zh3.png) |
+| 戰報分析（競速模式） | 戰報管理 |
+|:---:|:---:|
+| ![戰報分析 競速](images/analyze_tool_zh3.png) | ![戰報管理](images/tool_Manage_zh.png) |
 
 | 網卡選擇 | 環境診斷 |
 |:---:|:---:|
