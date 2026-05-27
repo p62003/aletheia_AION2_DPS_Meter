@@ -105,6 +105,10 @@
 |:---:|:---:|
 | ![蜂窩戰報](images/hive_report.png) | ![技能時間軸](images/hive_report2.png) |
 
+### 遊戲內 YouTube 搜尋
+
+![YouTube Search](images/youtube_search.png)
+
 ### 附屬工具
 
 | 戰報分析（DPS） | 戰報分析（HPS） |
