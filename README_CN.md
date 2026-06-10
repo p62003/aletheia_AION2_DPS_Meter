@@ -99,9 +99,9 @@
 |:---:|:---:|
 | ![蜂窝战报](images/hive_report.png) | ![技能时间轴](images/hive_report2.png) |
 
-### 游戏内 YouTube 搜索
+### 影片搜索（YouTube / B站 / Niconico）
 
-![YouTube Search](images/youtube_search.png)
+![Video Search](images/youtube_search.png)
 
 ### 附属工具
 

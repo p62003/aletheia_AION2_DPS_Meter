@@ -105,9 +105,9 @@
 |:---:|:---:|
 | ![蜂窩戰報](images/hive_report.png) | ![技能時間軸](images/hive_report2.png) |
 
-### 遊戲內 YouTube 搜尋
+### 影片搜尋（YouTube / B站 / Niconico）
 
-![YouTube Search](images/youtube_search.png)
+![Video Search](images/youtube_search.png)
 
 ### 附屬工具
 

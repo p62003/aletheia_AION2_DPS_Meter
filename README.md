@@ -103,9 +103,9 @@ Upload combat reports to Eternal Hive for detailed analysis and skill timelines:
 |:---:|:---:|
 | ![Hive Report](images/hive_report.png) | ![Skill Timeline](images/hive_report2.png) |
 
-### In-Game YouTube Search
+### Video Search (YouTube / Bilibili / Niconico)
 
-![YouTube Search](images/youtube_search.png)
+![Video Search](images/youtube_search.png)
 
 ### Companion Tools
 
