@@ -73,7 +73,7 @@
 ![戰鬥細節](images/overlay_combat_detail_zh.png)
 
 | 個人戰報視窗（v9.0） |
-|:---:|:---:|
+|:---:|
 | ![個人戰報](images/personal_log.png) |
 
 | 戰報側邊欄 | 右鍵選單（統一） |

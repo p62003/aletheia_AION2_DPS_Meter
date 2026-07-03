@@ -67,7 +67,7 @@
 ![战斗细节](images/overlay_combat_detail_zh.png)
 
 | 个人战报窗口（v9.0） |
-|:---:|:---:|
+|:---:|
 | ![个人战报](images/personal_log.png) |
 
 | 战报侧边栏 | 右键菜单（统一） |
