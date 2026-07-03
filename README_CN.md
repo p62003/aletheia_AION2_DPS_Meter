@@ -68,6 +68,10 @@
 
 ![主窗口](images/mainwindow_zh.png)
 
+| 战报侧边栏 | 右键菜单（统一） |
+|:---:|:---:|
+| ![战报侧边栏](images/tool_report_sidbar_zh.png) | ![右键菜单](images/right_click_menu_zh.png) |
+
 | 个人战报窗口（v9.0） |
 |:---:|
 | ![个人战报](images/personal_log.png) |
@@ -75,10 +79,6 @@
 | Mini 模式 | Normal 模式 |
 |:---:|:---:|
 | ![浮窗 Mini](images/overlay_mini.png) |![浮窗 Normal](images/overlay_normal.png) |
-
-| 战报侧边栏 | 右键菜单（统一） |
-|:---:|:---:|
-| ![战报侧边栏](images/tool_report_sidbar_zh.png) | ![右键菜单](images/right_click_menu_zh.png) |
 
 ### Skill MAP — 全队技能时间轴
 

@@ -68,6 +68,10 @@ Your support keeps this project alive.
 
 ![Main Window](images/mainwindow_en.png)
 
+| Report Sidebar | Right-Click Menu (Unified) |
+|:---:|:---:|
+| ![Report Sidebar](images/tool_report_sidbar_en.png) | ![Right-Click Menu](images/right_click_menu_en.png) |
+
 | Personal Report Window (v9.0) |
 |:---:|
 | ![Personal Report](images/personal_log.png) |
@@ -75,10 +79,6 @@ Your support keeps this project alive.
 | Mini Mode | Normal Mode |
 |:---:|:---:|
 | ![Overlay Mini](images/overlay_mini.png) |![Overlay Normal](images/overlay_normal.png) |
-
-| Report Sidebar | Right-Click Menu (Unified) |
-|:---:|:---:|
-| ![Report Sidebar](images/tool_report_sidbar_en.png) | ![Right-Click Menu](images/right_click_menu_en.png) |
 
 ### Skill MAP — Full Party Skill Timeline
 

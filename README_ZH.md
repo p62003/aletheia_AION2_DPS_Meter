@@ -74,6 +74,10 @@
 
 ![主視窗](images/mainwindow_zh.png)
 
+| 戰報側邊欄 | 右鍵選單（統一） |
+|:---:|:---:|
+| ![戰報側邊欄](images/tool_report_sidbar_zh.png) | ![右鍵選單](images/right_click_menu_zh.png) |
+
 | 個人戰報視窗（v9.0） |
 |:---:|
 | ![個人戰報](images/personal_log.png) |
@@ -81,10 +85,6 @@
 | Mini 模式 | Normal 模式 |
 |:---:|:---:|
 | ![浮窗 Mini](images/overlay_mini.png) |![浮窗 Normal](images/overlay_normal.png) |
-
-| 戰報側邊欄 | 右鍵選單（統一） |
-|:---:|:---:|
-| ![戰報側邊欄](images/tool_report_sidbar_zh.png) | ![右鍵選單](images/right_click_menu_zh.png) |
 
 ### Skill MAP — 全隊技能時間軸
 
