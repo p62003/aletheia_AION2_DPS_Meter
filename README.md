@@ -67,7 +67,7 @@ Your support keeps this project alive.
 ![Combat Detail](images/overlay_combat_detail_en.png)
 
 | Personal Report Window (v9.0) |
-|:---:|:---:|
+|:---:|
 | ![Personal Report](images/personal_log.png) |
 
 | Report Sidebar | Right-Click Menu (Unified) |
