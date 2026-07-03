@@ -31,7 +31,9 @@ Your support keeps this project alive.
 
 ---
 
-![Main Window](images/mainwindow_en.png)
+| Combat Detail (Buff Timeline + Damage Capsules) |
+|:---:|
+| ![Combat Detail](images/overlay_combat_detail_en.png) |
 
 ---
 
@@ -64,19 +66,19 @@ Your support keeps this project alive.
 
 ### In-Game Screenshots
 
-![Combat Detail](images/overlay_combat_detail_en.png)
+![Main Window](images/mainwindow_en.png)
 
 | Personal Report Window (v9.0) |
 |:---:|
 | ![Personal Report](images/personal_log.png) |
 
+| Mini Mode | Normal Mode |
+|:---:|:---:|
+| ![Overlay Mini](images/overlay_mini.png) |![Overlay Normal](images/overlay_normal.png) |
+
 | Report Sidebar | Right-Click Menu (Unified) |
 |:---:|:---:|
 | ![Report Sidebar](images/tool_report_sidbar_en.png) | ![Right-Click Menu](images/right_click_menu_en.png) |
-
-| Mini Mode | Combat Detail (Buff Timeline + Damage Capsules) |
-|:---:|:---:|
-| ![Overlay Mini](images/overlay_mini.png) |![Overlay Normal](images/overlay_normal.png) |
 
 ### Skill MAP — Full Party Skill Timeline
 
