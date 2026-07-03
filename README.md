@@ -64,11 +64,19 @@ Your support keeps this project alive.
 
 ### In-Game Screenshots
 
-![Overlay Normal](images/overlay_normal.png)
+![Combat Detail](images/overlay_combat_detail_en.png)
+
+| Personal Report Window (v9.0) |
+|:---:|:---:|
+| ![Personal Report](images/personal_log.png) |
+
+| Report Sidebar | Right-Click Menu (Unified) |
+|:---:|:---:|
+| ![Report Sidebar](images/tool_report_sidbar_en.png) | ![Right-Click Menu](images/right_click_menu_en.png) |
 
 | Mini Mode | Combat Detail (Buff Timeline + Damage Capsules) |
 |:---:|:---:|
-| ![Overlay Mini](images/overlay_mini.png) | ![Combat Detail](images/overlay_combat_detail_en.png) |
+| ![Overlay Mini](images/overlay_mini.png) |![Overlay Normal](images/overlay_normal.png) |
 
 ### Skill MAP — Full Party Skill Timeline
 
@@ -101,10 +109,6 @@ A 2D timeline view of the entire party's skill casts — "What was everyone doin
 - Summon damage automatically merged under the summoner
 - Healing skills tracked in a separate section (damage/healing don't overlap)
 
-| Personal Report Window (v9.0) | Report Sidebar |
-|:---:|:---:|
-| ![Personal Report](images/personal_log.png) | ![Report Sidebar](images/tool_report_sidbar_en.png) |
-
 ### Report Upload
 
 Upload combat reports to Eternal Hive for detailed analysis and skill timelines:
@@ -130,10 +134,6 @@ Upload combat reports to Eternal Hive for detailed analysis and skill timelines:
 | Interface Selection | Environment Diagnostics |
 |:---:|:---:|
 | ![Interface Selection](images/interface_en.png) | ![Diagnostics](images/tool_net_report_en.png) |
-
-| Right-Click Menu (Unified) |
-|:---:|
-| ![Right-Click Menu](images/right_click_menu_en.png) |
 
 - **Aletheia Analyzer** — report analysis with DPS/HPS/speedrun modes, compare against historical class averages
 - **Aletheia SkillMAP** — full party skill timeline, 2D MAP visualization of all party members' skill casts

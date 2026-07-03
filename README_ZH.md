@@ -70,11 +70,19 @@
 
 ### 遊戲內實際畫面
 
-![浮窗 Normal](images/overlay_normal.png)
+![戰鬥細節](images/overlay_combat_detail_zh.png)
+
+| 個人戰報視窗（v9.0） |
+|:---:|:---:|
+| ![個人戰報](images/personal_log.png) |
+
+| 戰報側邊欄 | 右鍵選單（統一） |
+|:---:|:---:|
+| ![戰報側邊欄](images/tool_report_sidbar_zh.png) | ![右鍵選單](images/right_click_menu_zh.png) |
 
 | Mini 模式 | 戰鬥細節（狀態分布圖 + 傷害類型膠囊） |
 |:---:|:---:|
-| ![浮窗 Mini](images/overlay_mini.png) | ![戰鬥細節](images/overlay_combat_detail_zh.png) |
+| ![浮窗 Mini](images/overlay_mini.png) |![浮窗 Normal](images/overlay_normal.png) |
 
 ### Skill MAP — 全隊技能時間軸
 
@@ -103,10 +111,6 @@
 - 召喚物傷害自動合併至主人名下
 - 治癒技能獨立分區統計（傷害/治癒不互相擠壓）
 
-| 個人戰報視窗（v9.0） | 戰報側邊欄 |
-|:---:|:---:|
-| ![個人戰報](images/personal_log.png) | ![戰報側邊欄](images/tool_report_sidbar_zh.png) |
-
 ### 戰報上傳
 
 上傳戰報至永恆蜂窩，查看完整分析與技能時間軸：
@@ -132,10 +136,6 @@
 | 網卡選擇 | 環境診斷 |
 |:---:|:---:|
 | ![網卡選擇](images/interface_zh.png) | ![環境診斷](images/tool_net_report_zh.png) |
-
-| 右鍵選單（統一） |
-|:---:|
-| ![右鍵選單](images/right_click_menu_zh.png) |
 
 - **Aletheia Analyzer** — 戰報分析工具，DPS/HPS/競速三種模式，查看個人表現與歷史平均對比
 - **Aletheia SkillMAP** — 全隊技能時間軸，以 2D MAP 呈現全隊技能施放記錄
