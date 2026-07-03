@@ -37,19 +37,24 @@ Your support keeps this project alive.
 
 ## Features
 
-### Four Display Modes
+### Three Display Modes
 - **Global** — Real-time DPS rankings for all nearby players
 - **Timer** — Training dummy mode with 10s idle auto-finalize; DOT does not extend the timer
-- **Dungeon** — Automatically activates upon entering an instance; independent party stats, auto-finalize on exit
 - **Boss** — Whitelisted bosses are tracked automatically; auto-finalize on boss death
+
+> The legacy Dungeon mode has been retired (old dungeon reports remain readable).
 
 ### Real-Time Overlay
 - QPainter custom rendering, high performance with zero lag
+- Frameless window with edge-snapping — drag near the game window and the overlay auto-aligns to its edges
+- Title bar control buttons: Reset / Personal Report / Expand Main Window (v9.0)
 - Semi-transparent overlay, background opacity affects only the backdrop (text stays fully opaque)
 - Normal / Mini size toggle (right-click menu)
 - Right-click menu integrates all customization (size/damage format/DPS format/opacity/background/theme)
 - **Hover Skill Panel** — hover over a player's rank row to see full skill breakdown
 - **Cast ECG** — waveform visualization of skill cast rhythm (wave height = damage, wave color = cast speed)
+- **Buff Timeline** — Gantt of buff cast timing + per-buff count capsules, color-coded by direction (v9.0)
+- **Damage Type Capsules** — seven-type breakdown (Crit / Heavy / Perfect / Frontal / Back / Block / Multi-hit), aligned with the official meter (v9.0)
 - **DOT Classification** — direct hits and DOT damage split automatically
 - **Auto-Position** — overlay snaps to the game window on startup
 - Metallic nickname text + class-colored gradient bars + hover glow effect + faction icons
@@ -59,11 +64,11 @@ Your support keeps this project alive.
 
 ### In-Game Screenshots
 
-![Overlay Normal](images/overlay_normal_en.png)
+![Overlay Normal](images/overlay_normal.png)
 
-| Mini Mode |
-|:---:|
-| ![Overlay Mini](images/overlay_mini_en.png) |
+| Mini Mode | Combat Detail (Buff Timeline + Damage Capsules) |
+|:---:|:---:|
+| ![Overlay Mini](images/overlay_mini.png) | ![Combat Detail](images/overlay_combat_detail_en.png) |
 
 ### Skill MAP — Full Party Skill Timeline
 
@@ -77,23 +82,28 @@ A 2D timeline view of the entire party's skill casts — "What was everyone doin
 
 | Full Party Overview + Region Select | Zoomed-In Skill Detail |
 |:---:|:---:|
-| ![Skill MAP Overview](images/skillmap_main.png) | ![Skill MAP Detail](images/skillmap_main2.png) |
+| ![Skill MAP Overview](images/tool_skillmap_main.png) | ![Skill MAP Detail](images/tool_skillmap_main2.png) |
 
 | English Mode with Healing Stats |
 |:---:|
-| ![Skill MAP EN HPS](images/skillmap_en_hps.png) |
+| ![Skill MAP EN HPS](images/tool_skillmap_en_hps.png) |
 
 ### Combat Analysis
 - Skill breakdown: damage share, crit rate, average hit, specialization indicators
 - Skill timeline: cast sequence tracking for rotation and combo analysis
 - **cHPS Healing Stats** — combat detail, reports, and analyzer all support healing metrics
-- Report system: auto-generated reports on dungeon/boss/timer session finalization
-- **Report Management** — browse, filter (class/cDPS/cHPS range), batch delete
+- **Personal Report Window** — one click on the overlay opens your latest 20 reports with full personal combat detail (v9.0)
+- Report system: auto-generated reports on boss/timer session finalization
+- **Report Management** — browse, filter (class/cDPS/cHPS range + target), batch delete
 - **Report Panel** — sidebar drawer with search/filter/upload
-- **Report Upload** — one-click upload to Eternal Hive for sharing
+- **Report Upload** — one-click upload to Eternal Hive or Aletheia Community; other players auto-anonymized (v9.0)
 - **Report Analyzer** — compare performance against historical class averages, with DPS/HPS/speedrun modes
 - Summon damage automatically merged under the summoner
 - Healing skills tracked in a separate section (damage/healing don't overlap)
+
+| Personal Report Window (v9.0) | Report Sidebar |
+|:---:|:---:|
+| ![Personal Report](images/personal_log.png) | ![Report Sidebar](images/tool_report_sidbar_en.png) |
 
 ### Report Upload
 
@@ -115,11 +125,15 @@ Upload combat reports to Eternal Hive for detailed analysis and skill timelines:
 
 | Report Analyzer (Speedrun) | Report Management |
 |:---:|:---:|
-| ![Analyzer Speedrun](images/analyze_tool_en3.png) | ![Report Management](images/tool_Manage_en.png) |
+| ![Analyzer Speedrun](images/analyze_tool_en3.png) | ![Report Management](images/tool_Manager_en.png) |
 
 | Interface Selection | Environment Diagnostics |
 |:---:|:---:|
-| ![Interface Selection](images/interface_en.png) | ![Diagnostics](images/net_report_en.png) |
+| ![Interface Selection](images/interface_en.png) | ![Diagnostics](images/tool_net_report_en.png) |
+
+| Right-Click Menu (Unified) |
+|:---:|
+| ![Right-Click Menu](images/right_click_menu_en.png) |
 
 - **Aletheia Analyzer** — report analysis with DPS/HPS/speedrun modes, compare against historical class averages
 - **Aletheia SkillMAP** — full party skill timeline, 2D MAP visualization of all party members' skill casts
@@ -149,7 +163,8 @@ Upload combat reports to Eternal Hive for detailed analysis and skill timelines:
 1. Install Npcap
 2. Download the latest version → [Releases](../../releases)
 3. Extract, then **right-click → Run as Administrator**
-4. Launch the game and data will appear automatically
+4. On first launch, sign in with Discord (required to enter the main window). Optionally activate an `AION2-XXXX-XXXX` serial for Pro — without it the main window is blurred, but the overlay and basic monitoring still work.
+5. Launch the game and data will appear automatically
 
 ### Global Hotkeys
 | Hotkey | Function |
@@ -177,7 +192,11 @@ A: Windows Defender's ML model may flag executables without an EV code signing c
 
 **Q: How accurate is the data?**
 
-A: v8.0 includes combo chain grouping, DOT classification, skill merging, and Protobuf tag upgrades for more precise damage attribution. Godstone and summon damage are included in totals.
+A: v8.0 includes combo chain grouping, DOT classification, skill merging, and improved damage-attribution precision. Godstone and summon damage are included in totals. v9.0 realigns the damage protocol (Heavy / Crit / Back / Multi-hit) to be 100% consistent with the official meter.
+
+**Q: The overlay isn't visible in Exclusive Fullscreen?**
+
+A: Exclusive Fullscreen bypasses the Windows DWM compositor, so all topmost overlays (Discord / Steam / NVIDIA included) stop rendering. Use Borderless / Windowed Fullscreen instead — visually identical, and the overlay stays on top.
 
 ---
 
