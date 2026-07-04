@@ -37,6 +37,7 @@
 - **Buff Direction Identification** — Precisely distinguishes caster and receiver, skipping vision-sync events to prevent count inflation
 - **Compatible with the 2026-07-01 Game Nickname Update**
 - **Removed Low-Usage Dungeon Mode** — Only Global / Timer / BOSS display modes remain (old dungeon reports still readable)
+- **Stigma Tier-5 Support** — After the game unlocked the 5th enhancement tier, tier-5 Stigma skill damage was misclassified as unknown and undercounted on the per-skill breakdown (total DPS unaffected); now fixed
 
 ### Improvements
 - **Overlay Title Bar Simplified** — Brand icon removed; title text switched to bold
@@ -108,6 +109,7 @@
 - **BUFF 方向識別** — 精準區分施放者與承受者，略過進入視野同步事件避免計數膨脹
 - **相容 2026-07-01 遊戲暱稱更新**
 - **移除使用率極低的副本模式** — 僅保留全域／計時／BOSS 三種顯示模式（舊版副本戰報仍可讀取）
+- **支援五階烙印技能** — 遊戲改版開放第5強化階級後，5 階烙印技能的傷害先前會被誤判為未知而少計（該技能占比偏低，總 DPS 不影響），現已修正
 
 ### 改善
 - **浮窗標題列精簡** — 移除品牌圖示；標題文字改粗體
@@ -179,6 +181,7 @@
 - **BUFF 方向识别** — 精准区分施放者与承受者，略过进入视野同步事件避免计数膨胀
 - **兼容 2026-07-01 游戏昵称更新**
 - **移除使用率极低的副本模式** — 仅保留全域／计时／BOSS 三种显示模式（旧版副本战报仍可读取）
+- **支援五阶烙印技能** — 游戏改版开放第5强化阶级后，5 阶烙印技能的伤害先前会被误判为未知而少计（该技能占比偏低，总 DPS 不影响），现已修正
 
 ### 改善
 - **浮窗标题列精简** — 移除品牌图示；标题文字改粗体
