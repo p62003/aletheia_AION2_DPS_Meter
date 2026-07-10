@@ -50,6 +50,7 @@ Your support keeps this project alive.
 - QPainter custom rendering, high performance with zero lag
 - Frameless window with edge-snapping — drag near the game window and the overlay auto-aligns to its edges
 - Title bar control buttons: Reset / Personal Report / Expand Main Window (v9.0)
+- **"You" Marker** — a slanted YOU tag on your own nickname capsule, so you spot yourself at a glance (v9.1)
 - Semi-transparent overlay, background opacity affects only the backdrop (text stays fully opaque)
 - Normal / Mini size toggle (right-click menu)
 - Right-click menu integrates all customization (size/damage format/DPS format/opacity/background/theme)
@@ -100,6 +101,7 @@ A 2D timeline view of the entire party's skill casts — "What was everyone doin
 
 ### Combat Analysis
 - Skill breakdown: damage share, crit rate, average hit, specialization indicators
+- **Your Gear Score** — combat detail shows your own gear score (v9.1)
 - Skill timeline: cast sequence tracking for rotation and combo analysis
 - **cHPS Healing Stats** — combat detail, reports, and analyzer all support healing metrics
 - **Personal Report Window** — one click on the overlay opens your latest 20 reports with full personal combat detail (v9.0)
@@ -107,6 +109,7 @@ A 2D timeline view of the entire party's skill casts — "What was everyone doin
 - **Report Management** — browse, filter (class/cDPS/cHPS range + target), batch delete
 - **Report Panel** — sidebar drawer with search/filter/upload
 - **Report Upload** — one-click upload to Eternal Hive or Aletheia Community; other players auto-anonymized (v9.0)
+- **Full Report Upload** — reports to the Aletheia community now carry every skill's full metrics and healing, powering class skill leaderboards and spec/stigma stats (v9.1)
 - **Report Analyzer** — compare performance against historical class averages, with DPS/HPS/speedrun modes
 - Summon damage automatically merged under the summoner
 - Healing skills tracked in a separate section (damage/healing don't overlap)
@@ -142,6 +145,7 @@ Upload combat reports to Eternal Hive for detailed analysis and skill timelines:
 - **Environment Diagnostics** — integrated into main window, one-click system info collection and JSON report export
 
 ### Additional Features
+- **Built-in Auto-Update** — launch via ALETHEIA-DPS.exe; future versions apply differential updates without a full re-download and auto-recover if interrupted; the announcement window also has a "Check for Updates" button (v9.1)
 - Eternal Hive PvE score / avatar API integration
 - Server identification (36 servers)
 - JSON theme system (dark/light base groups, colors, fonts, backgrounds)
@@ -164,7 +168,7 @@ Upload combat reports to Eternal Hive for detailed analysis and skill timelines:
 ### Quick Start
 1. Install Npcap
 2. Download the latest version → [Releases](../../releases)
-3. Extract, then **right-click → Run as Administrator**
+3. Extract, then launch **ALETHEIA-DPS.exe** (right-click → Run as Administrator) — from v9.1 this is the entry point, with built-in auto-update
 4. On first launch, sign in with Discord (required to enter the main window). Optionally activate an `AION2-XXXX-XXXX` serial for Pro — without it the main window is blurred, but the overlay and basic monitoring still work.
 5. Launch the game and data will appear automatically
 
