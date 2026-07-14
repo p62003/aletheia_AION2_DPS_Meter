@@ -4,6 +4,32 @@
 
 <summary>English</summary>
 
+## v9.2 (2026-07-11)
+
+### Critical Fixes
+- **Nickname Display Restored (game-update fix)** — After a game update, character nicknames disappeared in Abyss maps. This is now fixed. **If you were on v9.1, your nicknames are currently broken — please update.**
+- **Field / Multiplayer Damage Loss Fully Fixed** — A new transport-layer TCP stream reassembly step now sits between packet capture and parsing: in-order packets pass through instantly, retransmissions are de-duplicated, out-of-order segments are re-ordered, and dropped packets are isolated. This eliminates whole-event damage loss on large compressed packets split across network segments (the root fix for v9.1's "cross-segment loss" known limitation). Verified against the official meter in a 5-player dungeon and a field boss fight.
+
+### Overlay Improvements
+- **Upward-Expanding Layout** — When the overlay sits near the bottom of the game screen, it now stacks upward (title bar at the bottom, rank 1 nearest the title bar), keeping the window bottom-anchored as entries change.
+- **Your-Row Emphasis** — When you are first identified and when your total damage ticks up, your ranking row plays a brief highlight, micro-shift, and a spark at the end of your bar (display-only; combat stats untouched).
+- **Custom Background Fully Rendered** — Your custom overlay background is now drawn as a full backdrop with cover-crop and a readability mask; toggling it via right-click applies instantly and persists.
+- **K/s → M/s Rounding** — Values switch to `M/s` before they would round up to `1,000.0K/s`; the three columns now lay out by actual text width.
+
+### Main Window & Reports
+- **Report Sidebar Redesign** — A new "Reports" nav button (expand-only; the arrow still collapses); sidebar labels reorganized (Back to Global / Refresh / Report Manager / Community Platform / Personal Analysis / Skill Map); the "Upload" entry is now "Community Platform" (opens the Aletheia community site).
+- **Per-Report Upload Buttons** — Every report in the sidebar and the personal-report list gains its own upload button (disabled with a hint for dungeon / legacy reports).
+
+### Announcement & Menu
+- **Announcement Window Rebuilt** — The announcement is now rich-text cards (donation / changelog / download), with clear spacing, list indentation, and clickable links; the window is larger and resizable, and the donation address / account text is selectable.
+- **Right-Click Menu Cleanup** — "Upload with my nickname" moved directly under the Discord identity item; "Deactivate Serial" removed (serial deactivation still handled by the announcement window); checkbox display and spacing fixed.
+- **Activate-Serial Button Highlighted** — When not activated, the "Activate Serial" entry is now a bold amber outlined button instead of a gray text link.
+
+### Known Limitations
+- **Very Large Field Bosses (Dozens On-Screen) — Community Testing** — 5-player dungeons and 2-player field bosses are verified against the official meter; the original dozens-on-screen 5% scenario is left to community testing this release.
+- **Theme-Style Switcher Temporarily Removed** — Colors/themes can still be adjusted via settings; the live in-app switcher UI is temporarily removed this version and will return as a restart-applied option.
+- **Overlay Not Visible in Exclusive Fullscreen** — Exclusive Fullscreen bypasses the Windows DWM compositor, hiding all topmost overlays. Use Borderless Fullscreen instead.
+
 ## v9.1 (2026-07-10)
 
 ### New Features
@@ -58,6 +84,32 @@
 
 # Changelog
 
+## v9.2 (2026-07-11)
+
+### 重要修正
+- **暱稱顯示修復（遊戲更新適配）** — 遊戲更新後深淵地圖中，角色暱稱消失已修復。**若你先前使用 v9.1，暱稱目前為失效狀態，請務必更新。**
+- **野外／多人場景傷害缺失徹底修復** — 在封包擷取與解析之間新增傳輸層 TCP 串流重組：順序封包零延遲直通、重傳自動去重、亂序自動重排、掉包自動隔離。徹底解決大型壓縮封包被切成多段傳輸時，因亂序／重傳／掉包造成的整包傷害事件丟失（v9.1「跨分段丟失」已知限制的治本）。已於 5 人副本與野外 BOSS 對齊官方水錶讀數。
+
+### 浮窗改善
+- **向上展開形態** — 浮窗貼近遊戲畫面下緣時，改為向上排列（標題列置底、第一名最靠近標題列），資料筆數變動時保持視窗底部錨定。
+- **本人條目強調** — 首次辨識到你、以及你的總傷害增加時，本人排名列會有短暫的高亮、微位移與量條末端火花（純顯示效果，不影響統計數字）。
+- **自訂背景圖完整繪製** — 自訂浮窗背景圖改為完整底板 + 等比裁切 + 可讀性遮罩；右鍵切換即時生效並自動記憶。
+- **K/s → M/s 進位校正** — 數值在進位成 `1,000.0K/s` 前先轉為 `M/s`；三欄依實際字寬排列。
+
+### 主視窗與戰報
+- **戰報側欄改版** — 新增「戰報」導覽鈕（只展開；原箭頭仍可收合）；側欄文案整理為 返回全域／刷新清單／戰報管理／社群平台／個人分析／技能地圖；「上傳」入口改為「社群平台」（開啟 Aletheia 社群平台網站）。
+- **逐筆戰報上傳鈕** — 側欄與個人戰報清單的每筆戰報都新增獨立上傳鈕（副本／舊模式戰報的按鈕禁用並提示限制）。
+
+### 公告與右鍵選單
+- **公告視窗重製** — 公告改為分卡片富文本（贊助／更新內容／下載提示），行距、連結與段落層次清晰，視窗加大且可調整尺寸，贊助地址／帳號可直接選取複製。
+- **右鍵選單整理** — 「上傳顯示遊戲暱稱(本人)」移至 Discord 身分項目正下方；移除「取消啟動」（序號停用仍由公告視窗處理）；勾選框顯示與間距修正。
+- **序號啟動鈕醒目化** — 未啟用時「啟動序號」由灰色文字連結改為品牌黃描邊按鈕。
+
+### 已知限制
+- **大型野外 BOSS（幾十人同屏）待用戶群實測** — 5 人副本與 2 人野外 BOSS 已驗收對齊官方水錶；原始「幾十人同屏」的 5% 缺失場景交由本版用戶群實測。
+- **主題「風格」即時切換暫時下架** — 顏色／主題仍可透過設定調整；即時切換 UI 本版暫時移除，未來改為重啟生效再掛回。
+- **獨佔全螢幕下浮窗無法顯示** — 獨佔全螢幕繞過 Windows DWM 合成層，所有置頂浮窗皆失效。請改用無邊框全螢幕。
+
 ## v9.1 (2026-07-10)
 
 ### 新功能
@@ -111,6 +163,32 @@
 <summary>简体中文</summary>
 
 # Changelog
+
+## v9.2 (2026-07-11)
+
+### 重要修正
+- **昵称显示修复（游戏更新适配）** — 游戏更新后深渊地图中，角色昵称消失已修复。**若你先前使用 v9.1，昵称目前为失效状态，请务必更新。**
+- **野外／多人场景伤害缺失彻底修复** — 在封包撷取与解析之间新增传输层 TCP 串流重组：顺序封包零延迟直通、重传自动去重、乱序自动重排、掉包自动隔离。彻底解决大型压缩封包被切成多段传输时，因乱序／重传／掉包造成的整包伤害事件丢失（v9.1「跨分段丢失」已知限制的治本）。已于 5 人副本与野外 BOSS 对齐官方水表读数。
+
+### 浮窗改善
+- **向上展开形态** — 浮窗贴近游戏画面下缘时，改为向上排列（标题列置底、第一名最靠近标题列），资料笔数变动时保持窗口底部锚定。
+- **本人条目强调** — 首次辨识到你、以及你的总伤害增加时，本人排名列会有短暂的高亮、微位移与量条末端火花（纯显示效果，不影响统计数字）。
+- **自订背景图完整绘制** — 自订浮窗背景图改为完整底板 + 等比裁切 + 可读性遮罩；右键切换即时生效并自动记忆。
+- **K/s → M/s 进位校正** — 数值在进位成 `1,000.0K/s` 前先转为 `M/s`；三栏依实际字宽排列。
+
+### 主窗口与战报
+- **战报侧栏改版** — 新增「战报」导览钮（只展开；原箭头仍可收合）；侧栏文案整理为 返回全域／刷新清单／战报管理／社群平台／个人分析／技能地图；「上传」入口改为「社群平台」（开启 Aletheia 社群平台网站）。
+- **逐笔战报上传钮** — 侧栏与个人战报清单的每笔战报都新增独立上传钮（副本／旧模式战报的按钮禁用并提示限制）。
+
+### 公告与右键菜单
+- **公告窗口重制** — 公告改为分卡片富文本（赞助／更新内容／下载提示），行距、连结与段落层次清晰，窗口加大且可调整尺寸，赞助地址／帐号可直接选取复制。
+- **右键菜单整理** — 「上传显示游戏昵称(本人)」移至 Discord 身分项目正下方；移除「取消启动」（序号停用仍由公告窗口处理）；勾选框显示与间距修正。
+- **序号启动钮醒目化** — 未启用时「启动序号」由灰色文字连结改为品牌黄描边按钮。
+
+### 已知限制
+- **大型野外 BOSS（几十人同屏）待用户群实测** — 5 人副本与 2 人野外 BOSS 已验收对齐官方水表；原始「几十人同屏」的 5% 缺失场景交由本版用户群实测。
+- **主题「风格」即时切换暂时下架** — 颜色／主题仍可透过设定调整；即时切换 UI 本版暂时移除，未来改为重启生效再挂回。
+- **独占全屏幕下浮窗无法显示** — 独占全屏幕绕过 Windows DWM 合成层，所有置顶浮窗皆失效。请改用无边框全屏幕。
 
 ## v9.1 (2026-07-10)
 
