@@ -51,6 +51,7 @@ Your support keeps this project alive.
 - Frameless window with edge-snapping — drag near the game window and the overlay auto-aligns to its edges
 - Title bar control buttons: Reset / Personal Report / Expand Main Window (v9.0)
 - **"You" Marker** — a slanted YOU tag on your own nickname capsule, so you spot yourself at a glance (v9.1)
+- **BOSS Summary Row** — in boss fights the top ranking row shows boss name + team total damage + team DPS with a full red bar; the title bar slims to timer + kill mark (v9.3)
 - Semi-transparent overlay, background opacity affects only the backdrop (text stays fully opaque)
 - Normal / Mini size toggle (right-click menu)
 - Right-click menu integrates all customization (size/damage format/DPS format/opacity/background/theme)
@@ -110,6 +111,7 @@ A 2D timeline view of the entire party's skill casts — "What was everyone doin
 - **Report Panel** — sidebar drawer with search/filter/upload
 - **Report Upload** — one-click upload to Eternal Hive or Aletheia Community; other players auto-anonymized (v9.0)
 - **Full Report Upload** — reports to the Aletheia community now carry every skill's full metrics and healing, powering class skill leaderboards and spec/stigma stats (v9.1)
+- **Automatic Report Upload (Free users)** — compliant reports upload anonymously and automatically to the Aletheia Community (startup consent required); Sponsors have it off by default with manual target selection kept; teammates are always anonymous (v9.3)
 - **Report Analyzer** — compare performance against historical class averages, with DPS/HPS/speedrun modes
 - Summon damage automatically merged under the summoner
 - Healing skills tracked in a separate section (damage/healing don't overlap)
@@ -146,6 +148,7 @@ Upload combat reports to Eternal Hive for detailed analysis and skill timelines:
 
 ### Additional Features
 - **Built-in Auto-Update** — launch via ALETHEIA-DPS.exe; future versions apply differential updates without a full re-download and auto-recover if interrupted; the announcement window also has a "Check for Updates" button (v9.1)
+- **New-Report / New-Version Badge Dots** — synced across the main window, sidebar, right-click menu, and system tray (v9.3)
 - Eternal Hive PvE score / avatar API integration
 - Server identification (36 servers)
 - JSON theme system (dark/light base groups, colors, fonts, backgrounds)
@@ -169,7 +172,7 @@ Upload combat reports to Eternal Hive for detailed analysis and skill timelines:
 1. Install Npcap
 2. Download the latest version → [Releases](../../releases)
 3. Extract, then launch **ALETHEIA-DPS.exe** (right-click → Run as Administrator) — from v9.1 this is the entry point, with built-in auto-update
-4. On first launch, sign in with Discord (required to enter the main window). Optionally activate an `AION2-XXXX-XXXX` serial for Pro — without it the main window is blurred, but the overlay and basic monitoring still work.
+4. On first launch, sign in with Discord and agree to the report-upload terms (both required to enter the main window). Optionally activate an `AION2-XXXX-XXXX` serial for Pro — without it the main window is blurred, but the overlay and basic monitoring still work.
 5. Launch the game and data will appear automatically
 
 ### Global Hotkeys

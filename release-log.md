@@ -4,6 +4,48 @@
 
 <summary>English</summary>
 
+## v9.3 (2026-07-17)
+
+### Important Behavior Changes
+- **Discord Login Security Upgrade** — Serial activation/release and report uploads are now verified server-side against your Discord login, eliminating identity spoofing. **If you last logged in before 2026-07-06 and haven't re-logged since, you'll be asked to log in to Discord once after updating**; recently logged-in users won't notice anything.
+- **Upload Consent Now Required at Startup** — The consent item moved to the startup announcement window, with terms updated to v2.2 fully disclosing what gets uploaded; you cannot enter the main program without consenting (the old "declining doesn't affect normal use" wording has been corrected). Old consent records don't carry over — you'll be asked to read and agree again after updating. Consent can be toggled anytime in the announcement window, effective immediately.
+- **Automatic Report Upload for Free Users** — Compliant reports from free users are uploaded anonymously and automatically to the Aletheia community platform; Sponsors have auto-upload off by default, can enable it, and keep manual target selection. Teammates are always anonymous; only an active Sponsor who explicitly enables name display shows their own in-game nickname.
+- **Anonymous Team Data Points** — New reports include every teammate with a known class and damage as an anonymous data point for the community mixed leaderboard; class/skill pages remain Sponsor-only. Historical reports didn't save teammate data and can't be backfilled.
+
+### New Features
+- **BOSS Mode Summary Row** — In boss fights, the top ranking row now shows a team summary: boss icon + boss name (in red) + team total damage + team DPS, with a full red bar setting it apart from player rows; the title bar slims down to the timer and kill mark. The summary row ignores clicks/hover/right-click.
+- **New-Report / New-Version Badge Dots** — The main window, sidebar, right-click menu, system tray, and announcement window show breadcrumb badge dots in sync, cleared only when you reach the corresponding destination; opening personal reports clears the new-report dot.
+- **Announcement Version Tabs** — The announcement changelog now switches between versions via capsule tabs, so you can look back at previous versions.
+- **Hive Upload Link Dialog** — After a successful upload to BNS Hive, a dialog with a selectable URL pops up (Copy Link / Open in Browser) instead of force-opening your browser; batch uploads merge into one dialog with copy-all.
+- **First-Launch Language Detection** — With no saved language preference, the app picks Traditional Chinese / Simplified Chinese / English from your Windows locale; manual selection always wins.
+- **Upload Status at a Glance** — Report Manager now shows each report's "Uploaded / Pending / Non-compliant" status and totals directly.
+
+### Game Adaptation
+- **Bakron Island "Trial" Difficulty Support** — The expedition Trial difficulty added in the 2026-07-15 game update is fully covered (three bosses: Tiere / Thamon / Vakron), bringing total bosses from 875 to 878; report lists and Report Manager show and sort the "Trial" tag correctly.
+
+### Improvements
+- **Right-Click Menu Stays Open** — Checkable options (opacity / size / format / language, etc.) keep the menu open for consecutive adjustments; mutually exclusive options act as radio groups; menu text updates in place when switching language, without flicker.
+- **Report Manager Upgrades** — Wider window; a language dropdown in the filter row (two-way synced with the main window); new "All / Uploadable / Not Uploadable" quick filters; batch-upload compliance checks now split by target — community standards apply only to the "Aletheia Community" target, while "BNS Hive" uploads pass through.
+- **Manual Uploads Take Priority** — During background backfill, manual uploads always jump the queue; clicking upload on a report already queued shows a clear message.
+- **Upload Threshold Adjusted** — Minimum fight duration lowered from 15s to 5s so short-fight reports can upload; completely failed captures (all nicknames empty) are correctly marked not uploadable.
+- **Personal Report List Polished** — Uploaded reports correctly show "Uploaded" and disable the button; the list refreshes when you upload from the sidebar / Report Manager; button text follows language switching instantly.
+- **Title Bar & Sidebar Detailing** — Wider spacing between overlay title-bar buttons to reduce misclicks; the sidebar arrow no longer shows double tooltips and aligns to the panel top; the "⋮" button moved to the far right and renamed "More Settings"; classic DPS format gains a `/s` suffix.
+- **Community Site Language Follows the App** — Opening the community platform from the app now carries your language, so the site matches the app instead of your browser language.
+
+### Fixes
+- **Update Handoff Fixed** — When the updater launched by the app applies an update, the main program now exits properly instead of minimizing to the tray; updates also apply cleanly while minimized to the tray; canceling the updater restores the new-version notice.
+- **Upward-Expansion Jitter Fixed** — Fixed the overlay jittering up and down each frame when expanded upward near the bottom of the screen in BOSS mode.
+- **Overlay Snap Lockout Fixed** — Fixed the overlay getting stuck off-screen (even across restarts) when dragged far past the game window edges; diagonally stuck overlays also snap back to the nearest corner.
+- **Black Message Box Fixed** — Fixed message windows (e.g. upload results) rendering with an unreadable all-black background.
+- **English Layout Fix** — Buttons in the upload-target dialog no longer truncate in English (the window widens to fit).
+- **Badge Dot High-DPI Fix** — Badge dots no longer blur at 150%/200% system scaling.
+
+### Known Limitations
+- **One-Time Transition from v9.2** — v9.2 has neither badge dots nor the update handoff (both new in this version): a running v9.2 won't be notified of the new version (restart, or use Check for Updates in the announcement window), and after updating, **the old v9.2 may linger in the system tray — please right-click and exit it manually**. Updates from v9.3 onward won't have this rough edge.
+- **Trial Difficulty Pending Field Reports** — Trial data is in place; in-game boss identification and tagging await user reports.
+- **Very Large Field Bosses (Dozens On-Screen) — Under Observation** — 5-player dungeons and field bosses verified against the official meter; dozens-on-screen scenarios remain under observation.
+- **Overlay Not Visible in Exclusive Fullscreen** — Exclusive Fullscreen bypasses the Windows DWM compositor, hiding all topmost overlays. Use Borderless / Windowed Fullscreen instead.
+
 ## v9.2 (2026-07-11)
 
 ### Critical Fixes
@@ -84,6 +126,48 @@
 
 # Changelog
 
+## v9.3 (2026-07-17)
+
+### 重要行為變更
+- **Discord 登入安全升級** — 序號啟用／釋放與戰報上傳一律由伺服器驗證 Discord 登入身份，杜絕冒用他人身份。**2026-07-06 之前登入且此後未重新登入的用戶，更新後會被要求重新登入 Discord 一次**；近期登入過的用戶無感。
+- **戰報上傳同意改為啟動必要條件** — 同意項移至啟動公告視窗，條款升版 2.2，完整揭露上傳內容；未同意無法進入主程式（舊條款「不同意不影響正常使用」的描述已訂正）。舊版的同意紀錄不沿用，更新後會要求重新閱讀並同意；同意可隨時在公告視窗勾選／取消，即時生效。
+- **免費用戶戰報自動上傳** — 免費用戶的合規戰報會匿名自動上傳至 Aletheia 社群平台；Sponsor 預設關閉自動上傳，可自行開啟並保留手動選擇上傳目標。隊友永遠匿名；只有有效 Sponsor 且主動開啟顯名時，上傳者本人才會顯示遊戲暱稱。
+- **全隊匿名資料點** — 新戰報會把每位已知職業且有傷害的隊員作為匿名資料點納入社群平台混合榜；職業／技能頁維持 Sponsor 專屬。歷史戰報未保存隊友資料，無法回補。
+
+### 新功能
+- **BOSS 模式浮窗彙總行** — BOSS 戰排名首行新增全隊彙總：BOSS 圖標 + BOSS 名稱（紅色）+ 全隊總傷害 + 全隊 DPS，以紅色滿條與玩家列區隔；標題列同步精簡為計時與擊殺標記。彙總行不回應點擊／滑鼠停留／右鍵。
+- **新戰報／新版本紅點提示** — 主視窗、側欄、右鍵選單、系統匣與公告視窗同步顯示麵包屑紅點，到達對應位置才清除；開啟個人戰報即清除新戰報紅點。
+- **公告版本分頁** — 公告視窗的更新內容以版本膠囊切換，可回看前版內容。
+- **蜂窩上傳網址對話框** — 上傳永恆蜂窩成功後彈出可選取網址的對話框（複製連結／開啟網頁），不再強制開瀏覽器；批次多筆合併為單一對話框、一鍵複製全部。
+- **首次啟動自動語系** — 沒有既存語言偏好時，依 Windows 語系自動選擇繁中／簡中／英文；手動選擇永遠優先。
+- **自動上傳狀態可見化** — 戰報管理可直接查看每份戰報「已上傳／待處理／不合規」與總數，不需進入其他視窗。
+
+### 遊戲適配
+- **巴克隆空中島「試煉」難度支援** — 2026-07-15 遊戲更新新增的遠征試煉難度完整收錄（提耶／塔蒙／巴克隆三 BOSS），BOSS 總數 875 → 878；戰報列表與戰報管理正確顯示「試煉」標籤並排序。
+
+### 改善
+- **右鍵選單連續操作** — 勾選型選項（透明度／尺寸／格式／語言等）點選後選單保持開啟、可連續調整；互斥選項成組單選；切換語言時選單文字即時更新、不再閃爍。
+- **戰報管理升級** — 視窗加寬；篩選列新增語言下拉（與主視窗雙向同步即時翻譯）；新增「全部／可上傳／不可上傳」快速篩選；批次上傳的合規檢查依目標分流——僅「Aletheia 社群」目標套用社群標準，「永恆蜂窩」照傳不誤擋。
+- **手動上傳優先** — 背景補傳進行中，手動上傳一律插隊優先送出；戰報已在上傳佇列時再點上傳會明確提示。
+- **上傳門檻調整** — 戰鬥時長下限 15 秒 → 5 秒，短戰鬥戰報可上傳；徹底擷取失敗（全員暱稱空白）的戰報正確判為不可上傳。
+- **個人戰報清單完善** — 已上傳戰報正確顯示「已上傳」並禁用；由側欄／戰報管理上傳後清單同步刷新；按鈕文字隨語系即時切換。
+- **標題列與側欄細節** — 浮窗標題列按鈕間距放寬、降低誤觸；側欄展開箭頭不再出現雙重提示、位置對齊面板頂部；「⋮」按鈕移至最右並正名「更多設置」；經典 DPS 格式補 `/s` 後綴。
+- **社群平台語系跟隨** — 從程式內開啟社群平台時，網站語系自動與程式一致，不再受瀏覽器語言影響。
+
+### 修正
+- **更新交接修正** — 由程式啟動的更新程式套用更新時，主程式會正常退出、不再縮到系統匣；縮在系統匣時套用更新也能正常關閉；取消更新後新版本提示會恢復。
+- **浮窗向上展開抖動修復** — BOSS 模式浮窗貼近畫面下緣向上展開時，視窗上下抖動閃爍的問題已修正。
+- **浮窗邊界吸附卡死修復** — 浮窗大幅超出遊戲視窗邊界時卡在畫面外抓不回（重啟仍卡）的問題已修正；對角卡住也能吸回最近角落。
+- **提示視窗黑底修復** — 上傳結果等提示視窗背景全黑不可讀的問題已修正。
+- **英文介面佈局修正** — 上傳目標選擇視窗的英文按鈕不再截斷（視窗依內容自適應加寬）。
+- **紅點徽章高 DPI 修正** — 150%／200% 系統縮放下紅點不再模糊。
+
+### 已知限制
+- **從 v9.2 更新的一次性過渡** — v9.2 沒有紅點提示與更新交接機制（兩者皆為本版新增）：v9.2 運行中不會收到新版提示（請重啟或在公告視窗手動檢查更新），且套用更新後**舊 v9.2 可能殘留在系統匣，請手動右鍵退出**。從 v9.3 起的後續更新不再有此情況。
+- **試煉難度待實測回報** — 試煉資料已收錄，實機 BOSS 識別與標籤顯示待用戶回報。
+- **大型野外 BOSS（幾十人同屏）持續觀察** — 5 人副本與野外 BOSS 已對齊官方水錶，幾十人同屏場景維持觀察。
+- **獨佔全螢幕下浮窗無法顯示** — 獨佔全螢幕繞過 Windows DWM 合成層，所有置頂浮窗皆失效。請改用「無邊框全螢幕／視窗化全螢幕」。
+
 ## v9.2 (2026-07-11)
 
 ### 重要修正
@@ -163,6 +247,48 @@
 <summary>简体中文</summary>
 
 # Changelog
+
+## v9.3 (2026-07-17)
+
+### 重要行为变更
+- **Discord 登录安全升级** — 序号启用／释放与战报上传一律由服务器验证 Discord 登录身份，杜绝冒用他人身份。**2026-07-06 之前登录且此后未重新登录的用户，更新后会被要求重新登录 Discord 一次**；近期登录过的用户无感。
+- **战报上传同意改为启动必要条件** — 同意项移至启动公告窗口，条款升版 2.2，完整揭露上传内容；未同意无法进入主程序（旧条款「不同意不影响正常使用」的描述已订正）。旧版的同意纪录不沿用，更新后会要求重新阅读并同意；同意可随时在公告窗口勾选／取消，即时生效。
+- **免费用户战报自动上传** — 免费用户的合规战报会匿名自动上传至 Aletheia 社群平台；Sponsor 预设关闭自动上传，可自行打开并保留手动选择上传目标。队友永远匿名；只有有效 Sponsor 且主动打开显名时，上传者本人才会显示游戏昵称。
+- **全队匿名数据点** — 新战报会把每位已知职业且有伤害的队员作为匿名数据点纳入社群平台混合榜；职业／技能页维持 Sponsor 专属。历史战报未保存队友数据，无法回补。
+
+### 新功能
+- **BOSS 模式浮窗汇总行** — BOSS 战排名首行添加全队汇总：BOSS 图标 + BOSS 名称（红色）+ 全队总伤害 + 全队 DPS，以红色满条与玩家列区隔；标题列同步精简为计时与击杀标记。汇总行不回应点击／鼠标停留／右键。
+- **新战报／新版本红点提示** — 主窗口、侧栏、右键菜单、系统匣与公告窗口同步显示面包屑红点，到达对应位置才清除；打开个人战报即清除新战报红点。
+- **公告版本分页** — 公告窗口的更新内容以版本胶囊切换，可回看前版内容。
+- **蜂窝上传网址对话框** — 上传永恒蜂窝成功后弹出可选取网址的对话框（拷贝链接／打开网页），不再强制开浏览器；批量多笔合并为单一对话框、一键拷贝全部。
+- **首次启动自动语系** — 没有既存语言偏好时，依 Windows 语系自动选择繁中／简中／英文；手动选择永远优先。
+- **自动上传状态可见化** — 战报管理可直接查看每份战报「已上传／待处理／不合规」与总数，不需进入其他窗口。
+
+### 游戏适配
+- **巴克隆空中岛「试炼」难度支持** — 2026-07-15 游戏更新添加的远征试炼难度完整收录（提耶／塔蒙／巴克隆三 BOSS），BOSS 总数 875 → 878；战报列表与战报管理正确显示「试炼」标签并排序。
+
+### 改善
+- **右键菜单连续操作** — 勾选型选项（透明度／尺寸／格式／语言等）点击后菜单保持打开、可连续调整；互斥选项成组单选；切换语言时菜单文本即时更新、不再闪烁。
+- **战报管理升级** — 窗口加宽；筛选列添加语言下拉（与主窗口双向同步即时翻译）；添加「全部／可上传／不可上传」快速筛选；批量上传的合规检查依目标分流——仅「Aletheia 社群」目标套用社群标准，「永恒蜂窝」照传不误挡。
+- **手动上传优先** — 背景补传进行中，手动上传一律插队优先送出；战报已在上传队列时再点上传会明确提示。
+- **上传门槛调整** — 战斗时长下限 15 秒 → 5 秒，短战斗战报可上传；彻底截取失败（全员昵称空白）的战报正确判为不可上传。
+- **个人战报清单完善** — 已上传战报正确显示「已上传」并禁用；由侧栏／战报管理上传后清单同步刷新；按钮文本随语系即时切换。
+- **标题列与侧栏细节** — 浮窗标题列按钮间距放宽、降低误触；侧栏展开箭头不再出现双重提示、位置对齐面板顶部；「⋮」按钮移至最右并正名「更多设置」；经典 DPS 格式补 `/s` 后缀。
+- **社群平台语系跟随** — 从程序内打开社群平台时，网站语系自动与程序一致，不再受浏览器语言影响。
+
+### 修正
+- **更新交接修正** — 由程序启动的更新程序套用更新时，主程序会正常退出、不再缩到系统匣；缩在系统匣时套用更新也能正常关闭；取消更新后新版本提示会恢复。
+- **浮窗向上展开抖动修复** — BOSS 模式浮窗贴近画面下缘向上展开时，窗口上下抖动闪烁的问题已修正。
+- **浮窗边界吸附卡死修复** — 浮窗大幅超出游戏窗口边界时卡在画面外抓不回（重启仍卡）的问题已修正；对角卡住也能吸回最近角落。
+- **提示窗口黑底修复** — 上传结果等提示窗口背景全黑不可读的问题已修正。
+- **英文接口布局修正** — 上传目标选择窗口的英文按钮不再截断（窗口依内容自适应加宽）。
+- **红点徽章高 DPI 修正** — 150%／200% 系统缩放下红点不再模糊。
+
+### 已知限制
+- **从 v9.2 更新的一次性过渡** — v9.2 没有红点提示与更新交接机制（两者皆为本版添加）：v9.2 运行中不会收到新版提示（请重启或在公告窗口手动检查更新），且套用更新后**旧 v9.2 可能残留在系统匣，请手动右键退出**。从 v9.3 起的后续更新不再有此情况。
+- **试炼难度待实测回报** — 试炼数据已收录，实机 BOSS 识别与标签显示待用户回报。
+- **大型野外 BOSS（几十人同屏）持续观察** — 5 人副本与野外 BOSS 已对齐官方水表，几十人同屏场景维持观察。
+- **独占全屏幕下浮窗无法显示** — 独占全屏幕绕过 Windows DWM 合成层，所有置顶浮窗皆失效。请改用「无边框全屏幕／窗口化全屏幕」。
 
 ## v9.2 (2026-07-11)
 
