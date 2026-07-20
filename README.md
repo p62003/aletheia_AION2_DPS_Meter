@@ -48,7 +48,7 @@ Your support keeps this project alive.
 
 ### Real-Time Overlay
 - QPainter custom rendering, high performance with zero lag
-- Frameless window with edge-snapping — drag near the game window and the overlay auto-aligns to its edges
+- Frameless window, drag freely anywhere on screen — including onto another monitor (edge-snapping removed in v9.4)
 - Title bar control buttons: Reset / Personal Report / Expand Main Window (v9.0)
 - **"You" Marker** — a slanted YOU tag on your own nickname capsule, so you spot yourself at a glance (v9.1)
 - **BOSS Summary Row** — in boss fights the top ranking row shows boss name + team total damage + team DPS with a full red bar; the title bar slims to timer + kill mark (v9.3)
@@ -60,7 +60,7 @@ Your support keeps this project alive.
 - **Buff Timeline** — Gantt of buff cast timing + per-buff count capsules, color-coded by direction (v9.0)
 - **Damage Type Capsules** — seven-type breakdown (Crit / Heavy / Perfect / Frontal / Back / Block / Multi-hit), aligned with the official meter (v9.0)
 - **DOT Classification** — direct hits and DOT damage split automatically
-- **Auto-Position** — overlay snaps to the game window on startup
+- **Auto-Position** — the overlay restores its last position on launch, or sits center-right on the current screen the first time
 - Metallic nickname text + class-colored gradient bars + hover glow effect + faction icons
 - Pairing status indicator + real-time network latency (RTT) + accelerator detection
 - 4K DPI auto-scaling
@@ -104,6 +104,7 @@ A 2D timeline view of the entire party's skill casts — "What was everyone doin
 - Skill breakdown: damage share, crit rate, average hit, specialization indicators
 - **Your Gear Score** — combat detail shows your own gear score (v9.1)
 - Skill timeline: cast sequence tracking for rotation and combo analysis
+- **Left/Right-Click Skill Coloring** — skill names are colored by trigger key (light blue for left, orange-red for right) across combat details and the skill map (v9.4)
 - **cHPS Healing Stats** — combat detail, reports, and analyzer all support healing metrics
 - **Personal Report Window** — one click on the overlay opens your latest 20 reports with full personal combat detail (v9.0)
 - Report system: auto-generated reports on boss/timer session finalization
@@ -112,6 +113,7 @@ A 2D timeline view of the entire party's skill casts — "What was everyone doin
 - **Report Upload** — one-click upload to Eternal Hive or Aletheia Community; other players auto-anonymized (v9.0)
 - **Full Report Upload** — reports to the Aletheia community now carry every skill's full metrics and healing, powering class skill leaderboards and spec/stigma stats (v9.1)
 - **Automatic Report Upload (Free users)** — compliant reports upload anonymously and automatically to the Aletheia Community (startup consent required); Sponsors have it off by default with manual target selection kept; teammates are always anonymous (v9.3)
+- **Server in Reports** — uploads carry your server (for yourself and every participant), so community leaderboards can categorize by server (v9.4)
 - **Report Analyzer** — compare performance against historical class averages, with DPS/HPS/speedrun modes
 - Summon damage automatically merged under the summoner
 - Healing skills tracked in a separate section (damage/healing don't overlap)
@@ -201,7 +203,7 @@ A: Windows Defender's ML model may flag executables without an EV code signing c
 
 **Q: How accurate is the data?**
 
-A: v8.0 includes combo chain grouping, DOT classification, skill merging, and improved damage-attribution precision. Godstone and summon damage are included in totals. v9.0 realigns the damage protocol (Heavy / Crit / Back / Multi-hit) to be 100% consistent with the official meter.
+A: v8.0 includes combo chain grouping, DOT classification, skill merging, and improved damage-attribution precision. Godstone and summon damage are included in totals. v9.0 realigns damage-type classification (Heavy / Crit / Back / Multi-hit) to match the official meter 100%.
 
 **Q: The overlay isn't visible in Exclusive Fullscreen?**
 
