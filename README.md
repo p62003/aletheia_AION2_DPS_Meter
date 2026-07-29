@@ -55,6 +55,7 @@ Your support keeps this project alive.
 - Semi-transparent overlay, background opacity affects only the backdrop (text stays fully opaque)
 - Normal / Mini size toggle (right-click menu)
 - Right-click menu integrates all customization (size/damage format/DPS format/opacity/background/theme)
+- **Show Overlay Toggle** — a checkable "Show Overlay" entry in the right-click menu; after hiding the overlay you can bring it back from the main window's right-click menu or the system tray (v9.4.1)
 - **Hover Skill Panel** — hover over a player's rank row to see full skill breakdown
 - **Cast ECG** — waveform visualization of skill cast rhythm (wave height = damage, wave color = cast speed)
 - **Buff Timeline** — Gantt of buff cast timing + per-buff count capsules, color-coded by direction (v9.0)
@@ -105,6 +106,7 @@ A 2D timeline view of the entire party's skill casts — "What was everyone doin
 - **Your Gear Score** — combat detail shows your own gear score (v9.1)
 - Skill timeline: cast sequence tracking for rotation and combo analysis
 - **Left/Right-Click Skill Coloring** — skill names are colored by trigger key (light blue for left, orange-red for right) across combat details and the skill map (v9.4)
+- **"Frontal" Column** — the skill table now covers all seven damage types, with Frontal placed between Perfect and Back; older reports have no such value and show 0% (v9.4.1)
 - **cHPS Healing Stats** — combat detail, reports, and analyzer all support healing metrics
 - **Personal Report Window** — one click on the overlay opens your latest 20 reports with full personal combat detail (v9.0)
 - Report system: auto-generated reports on boss/timer session finalization
