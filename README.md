@@ -166,6 +166,33 @@ Upload combat reports to Eternal Hive for detailed analysis and skill timelines:
 
 ---
 
+## Free vs Sponsor
+
+| Feature | Free | Sponsor |
+|---------|------|---------|
+| Real-Time Overlay (Global / Timer / Boss) | ✔ | ✔ |
+| Hover Skill Panel · Cast ECG · Buff Timeline · Damage Type Capsules | ✔ | ✔ |
+| Personal Report Window (latest 20 fights) | ✔ | ✔ |
+| Report Management (browse / filter / delete) | ✔ | ✔ |
+| Video Search | ✔ | ✔ |
+| Hotkeys (overlay / main window, customizable) | ✔ | ✔ |
+| Network Adapter Selection & Accelerator Detection | ✔ | ✔ |
+| Environment Diagnostics | ✔ | ✔ |
+| Eternal Hive Lookup (PvE score / avatar) | ✔ | ✔ |
+| Auto-Updater | ✔ | ✔ |
+| Automatic Report Upload | ✔ (always on) | ✔ (toggleable) |
+| Community Mixed Leaderboard | ✔ | ✔ |
+| Main Window (rankings + combat detail + report sidebar) | — | ✔ |
+| Aletheia Analyzer (DPS / HPS / Speedrun) | — | ✔ |
+| Aletheia SkillMAP (full party skill timeline) | — | ✔ |
+| Manual Report Upload (choose Eternal Hive / Community) | — | ✔ |
+| Show Your Nickname on Uploads | — | ✔ |
+| Community Class & Skill Leaderboards | — | ✔ |
+
+A sponsor key is a thank-you for supporting development, not a subscription service. Keys start at **30 days** and scale with the amount contributed. Free features do not require a key.
+
+---
+
 ## Installation & Usage
 
 ### Requirements
